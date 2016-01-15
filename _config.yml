@@ -7,6 +7,7 @@
 
 # Site settings
 title: WanderingCreative
+subtitle: A few words from an avid HTMLer
 email: contact@jasoncorns.com
 description: > # this means to ignore newlines until "baseurl:"
   Wandering the world of code design and application architecture, absorbing all the Creative opportunities in this
