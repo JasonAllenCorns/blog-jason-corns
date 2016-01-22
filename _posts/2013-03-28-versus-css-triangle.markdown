@@ -3,9 +3,10 @@ layout: post
 title:  "Jason vs. the CSS Triangle: Seeing My Own Shadow"
 date:   2013-03-28 11:14:23 -0800
 categories: blog
+author: jason_corns
 ---
 
-A few years ago, I stumbled upon the CSS Triangle - a clever abuse of borders to achieve a triangle shape using no images.  This led, almost immediately, to things like fancy tooltips.
+A few years ago, I stumbled upon the CSS Triangle - a clever abuse of borders to achieve a triangle shape using no images.<!--more-->  This led, almost immediately, to things like fancy tooltips.
 
 I like things that are clever and simple, so I was immediately drawn to the idea.  The border trick, however, does not play well with box-shadow, and I desperately wanted a shadow on the triangle marker (“desperate” may be too strong a term, here). The borders are still technically there, so the box-shadow will show around the rectangular space occupied by the element, not just the triangular space occupied by the border.
 

@@ -3,11 +3,12 @@ layout: post
 title:  "Jason vs. jealousy – a quick look at the Responsive Redesign of the Boston Globe"
 date:   2011-09-15 12:16:18 -0800
 categories: blog 
-tags: CSS PLANNING SITE-DESIGN RESPONSIVE-WEB-DESIGN  
+tags: CSS PLANNING SITE-DESIGN RESPONSIVE-WEB-DESIGN
+author: jason_corns
 ---
-Why jealousy?  I have not yet had the opportunity to work on a responsive redesign yet; REALLY jealous of all parties involved!
+A short while ago, the Boston Globe rolled out a redesigned website. To say that it was just redesigned is an understatement, though – the new entity is the result of Responsive Web Design.<!--more-->
 
-A short while ago, the Boston Globe rolled out a redesigned website. To say that it was just redesigned is an understatement, though – the new entity is the result of Responsive Web Design.
+So, why jealousy?  I have not yet had the opportunity to work on a responsive redesign yet; REALLY jealous of all parties involved!
 
 This very buzzwordy descriptor is a new philosophy in web design where content is delivered in principally the same manner to all devices but its presentation is adjusted to accommodate the browser’s screen size and orientation. There is a single site that works for both desktop and mobile displays in both portrait and landscape. In the past, this has been accomplished by developing a site per visitor type – one site for the iPhone visitors, one for Blackberry visitors, a ‘main’/'regular’/'desktop’ site, etc. Sure, designers and developers could combine some of the views and use a generic ‘mobile’ site, but the idea was the same.
 

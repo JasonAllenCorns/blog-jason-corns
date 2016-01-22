@@ -2,22 +2,19 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
+<div class="card-columns">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+    <div class="card card-block">
+        <blockquote class="card-blockquote">
+            <p class="lead"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+            <article>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</article>
+            <footer>
+                <small class="text-muted">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                    {{ post.date | date: "%b %-d, %Y" }}
+                </small>
+            </footer>
+        </blockquote>
+    </div>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>

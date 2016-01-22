@@ -3,15 +3,16 @@ layout: post
 title:  "Jason vs. Semantic CSS - establishing a visual outline in your stylesheet"
 date:   2010-10-16 11:05:18 -0800
 categories: blog accessibility
-tags: CODE-SAMPLE CSS TIPS 
+tags: CODE-SAMPLE CSS TIPS
+author: jason_corns
 ---
-
+Let's move beyond simply linting our code, and delve into creating a visual outline of our CSS.<!--more-->  Anyone who writes code, anything from simple UI shifts through complex exotic joins, inherits a responsibility to write reasonable code.  Good code solves a problem or answers a question; well-written code lives on, open and accessible to future developers.
+ 
 Before we begin, let me say that the delivered stylesheet should be minified and free of excess spaces, tabs, semicolons and lengths of 0px instead of “0″, using tools like the [YUI compressor](http://developer.yahoo.com/yui/compressor/) or the [CSS Drive Online CSS Compression Utility](http://www.cssdrive.com/index.php/main/csscompressor/).
 
-I have read and been part of many discussions about the [format of a CSS document](http://stackoverflow.com/questions/72911/whats-the-best-way-to-organize-css-rules).  I happen to prefer to keep my declarations on one line, alphabetized.  I also like to keep the entire ruleset on one line, unless the ruleset is too long (I know, that’s subjective, but it is my blog).
+I have read and been part of many discussions about the [format of a CSS document](http://stackoverflow.com/questions/72911/whats-the-best-way-to-organize-css-rules).  I happen to prefer to keep my declarations line-separated, alphabetized within contextually appropriate groups.  I also like to keep the entire ruleset on one line, unless the ruleset is too long (I know, that’s subjective, but it is my blog).
 
 Recently, though, I’ve had to work on some interesting and complex designs.  As the DOM depth grew, I found myself getting lost in my own HTML.  The solution, for me, was a simple one, both easy to implement and easy to back out of (especially when using the tools listed above).
-
 
 My CSS formatting rules were category based:
 

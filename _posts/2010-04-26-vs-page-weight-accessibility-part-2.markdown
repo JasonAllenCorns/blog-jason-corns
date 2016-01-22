@@ -3,9 +3,11 @@ layout: post
 title:  "Jason vs. Page Weight – Accessibility Series, pt. 2"
 date:   2010-04-26 21:55:34 -0800
 categories: blog accessibility
+tags: WEB-STANDARDS
+author: jason_corns
 ---
 
-When the topic of Web Accessibility arises, I immediately think of a standard set of keywords: ADA/508 compliance, information architecture, JavaScript, well-formed HTML, ALT text, etc.  This list represents the things that, as I have been taught over the past few years, have significant impact on the accessibility of a page and a site.
+When the topic of Web Accessibility arises, I immediately think of a standard set of keywords: ADA/508 compliance, information architecture, JavaScript, well-formed HTML, ALT text, etc...<!--more-->  This list represents the things that, as I have been taught over the past few years, have significant impact on the accessibility of a page and a site.
 
 Recently, during an accessibility assessment, I discovered a new factor to consider: page weight.  Page Weight should not be a new concept to any web designer.  Ever since the days of dial-up dominance, we have been scrutinizing every paragraph, abusing calculators to determine the most appropriate image collection, mapping the dimension and location of every new icon and rollover in our sprite, clocking speed tests and ripping out every non-essential bit of white-space we could find.  I admit that I have become a little lax, allowing more and larger images on my page for the sake of design, all the while whispering silent apologies to the dial-up community.
 

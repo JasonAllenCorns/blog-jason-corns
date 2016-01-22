@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+<body>
+<div class="container-fluid" id="wrapper">
+    <div class="row" id="page-wrapper">
+        <div class="col-xs-12 col-md-10 col-md-push-2 bg-gray blog-tiles">
+            {{ content }}
+        </div>
+        <div class="col-xs-12 col-md-2 col-md-pull-10 aside">
+            <h2>test for echo</h2>
+        </div>
     </div>
+</div>
 
-    {% include footer.html %}
-
-  </body>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</body>
 
 </html>

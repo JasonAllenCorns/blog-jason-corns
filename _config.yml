@@ -14,9 +14,8 @@ description: > # this means to ignore newlines until "baseurl:"
   wonderful industry of ours.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jasoncorns.com" # the base hostname & protocol for your site
-twitter_username: jasoncorns
-github_username:  resentedHook
 timezone: America/Los_Angeles
-
+future: true
+excerpt_separator: <!--more-->
 # Build settings
 markdown: kramdown
