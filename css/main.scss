@@ -3,10 +3,5 @@
 ---
 @charset "utf-8";
 
-@media (min-width: 769px) {
-  .aside {
-    color: #fff;
-    min-height: 100vh !important;
-    background: #000 url(/img/sidebar/profile.jpg) no-repeat center top;
-  }
-}
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "syntax-highlighting";

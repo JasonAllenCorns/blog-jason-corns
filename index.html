@@ -1,20 +1,21 @@
 ---
 layout: default
 ---
-
-<div class="card-columns">
-    {% for post in site.posts %}
-    <div class="card card-block">
-        <blockquote class="card-blockquote">
-            <p class="lead"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-            <article>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</article>
-            <footer>
-                <small class="text-muted">
-                    Someone famous in <cite title="Source Title">Source Title</cite>
-                    {{ post.date | date: "%b %-d, %Y" }}
-                </small>
-            </footer>
-        </blockquote>
+<div class="col-xs-12 col-md-10 col-md-push-2 blog-tiles bg-gray">
+    <div class="card-columns">
+        {% for post in site.posts %}
+        <div class="card card-block">
+            <blockquote class="card-blockquote">
+                <p class="lead"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </p>
+                <article>{{ post.excerpt | strip_html }}</article>
+                <footer>
+                    <small class="text-muted">
+                        {{ site.data.authors[post.author].name }} on <em>{{ post.date | date: "%b %-d, %Y" }}</em>
+                    </small>
+                </footer>
+            </blockquote>
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>

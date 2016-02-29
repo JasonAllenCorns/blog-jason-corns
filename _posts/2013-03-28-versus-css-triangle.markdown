@@ -46,16 +46,12 @@ Renders as this:
 
 ![alt text](/img/css-corner-full-width.png "CSS corner with drop-shadow")
 
- 
 
- 
+
+
 
 That little triangle on the left?  That’s the result of the CSS block above.  The rounded corners and general box-shadow are just part of the surrounding Proof-of-Concept.
 
 And voila.  Take that, PNGs.
 
 Standard InternetExplorer disclaimer, blah blah blah.  This solution uses box-shadow and multi-stop gradients – two things that are not fully supported by IE.
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
