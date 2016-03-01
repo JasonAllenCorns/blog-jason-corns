@@ -5,6 +5,13 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+
+# Assets
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:         ./_sass
+  style:            :compressed
+
 # Site settings
 title: jasoncorns.com
 subtitle: A few words from an avid HTMLer
