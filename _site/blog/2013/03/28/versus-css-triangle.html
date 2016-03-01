@@ -10,7 +10,6 @@
     <meta name="description" content="A few years ago, I stumbled upon the CSS Triangle - a clever abuse of borders to achieve a triangle shape using no images.">
     <link rel="shortcut icon" href="/img/favicon.ico?v=2"/>
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="canonical" href="http://jasoncorns.com/blog/2013/03/28/versus-css-triangle.html">
     <link rel="alternate" type="application/rss+xml" title="jasoncorns.com" href="http://jasoncorns.com/feed.xml">
 </head>
@@ -19,16 +18,22 @@
 <body>
 <div class="container-fluid" id="wrapper">
     <div class="row" id="page-wrapper">
-        <div class="col-xs-12 col-md-10 col-md-push-2 bg-gray blog-tiles">
-            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="col-xs-12 col-md-10 col-md-push-2 blog-tiles">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Jason vs. the CSS Triangle: Seeing My Own Shadow</h1>
-    <p class="post-meta"><time datetime="2013-03-28T12:14:23-07:00" itemprop="datePublished">Mar 28, 2013</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">jason_corns</span></span></p>
-  </header>
+        <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">Jason vs. the CSS Triangle: Seeing My Own Shadow</h1>
+            <p class="post-meta">
+                <time datetime="2013-03-28T12:14:23-07:00" itemprop="datePublished">Mar
+                    28, 2013
+                </time>
+                 • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
+                    itemprop="name">jason_corns</span></span>
+            </p>
+        </header>
 
-  <div class="post-content" itemprop="articleBody">
-    <p>A few years ago, I stumbled upon the CSS Triangle - a clever abuse of borders to achieve a triangle shape using no images.<!--more-->  This led, almost immediately, to things like fancy tooltips.</p>
+        <div class="post-content" itemprop="articleBody">
+            <p>A few years ago, I stumbled upon the CSS Triangle - a clever abuse of borders to achieve a triangle shape using no images.<!--more-->  This led, almost immediately, to things like fancy tooltips.</p>
 
 <p>I like things that are clever and simple, so I was immediately drawn to the idea.  The border trick, however, does not play well with box-shadow, and I desperately wanted a shadow on the triangle marker (“desperate” may be too strong a term, here). The borders are still technically there, so the box-shadow will show around the rectangular space occupied by the element, not just the triangular space occupied by the border.</p>
 
@@ -72,12 +77,11 @@
 
 <p>Standard InternetExplorer disclaimer, blah blah blah.  This solution uses box-shadow and multi-stop gradients – two things that are not fully supported by IE.</p>
 
-
-  </div>
-
-</article>
-
         </div>
+
+    </article>
+</div>
+
         <div class="col-xs-12 col-md-2 col-md-pull-10 aside">
             <h2>test for echo</h2>
         </div>

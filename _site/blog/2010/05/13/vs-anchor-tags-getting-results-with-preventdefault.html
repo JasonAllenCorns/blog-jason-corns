@@ -10,7 +10,6 @@
     <meta name="description" content="In another post, Jason vs. Page Weight – Accessibility Series, pt. 2, I talked about a solving page weight problem I had with a client.">
     <link rel="shortcut icon" href="/img/favicon.ico?v=2"/>
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="canonical" href="http://jasoncorns.com/blog/2010/05/13/vs-anchor-tags-getting-results-with-preventdefault.html">
     <link rel="alternate" type="application/rss+xml" title="jasoncorns.com" href="http://jasoncorns.com/feed.xml">
 </head>
@@ -19,16 +18,22 @@
 <body>
 <div class="container-fluid" id="wrapper">
     <div class="row" id="page-wrapper">
-        <div class="col-xs-12 col-md-10 col-md-push-2 bg-gray blog-tiles">
-            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="col-xs-12 col-md-10 col-md-push-2 blog-tiles">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Jason vs. Anchor Tags – Getting Results with the preventDefault method</h1>
-    <p class="post-meta"><time datetime="2010-05-13T19:22:49-07:00" itemprop="datePublished">May 13, 2010</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">jason_corns</span></span></p>
-  </header>
+        <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">Jason vs. Anchor Tags – Getting Results with the preventDefault method</h1>
+            <p class="post-meta">
+                <time datetime="2010-05-13T19:22:49-07:00" itemprop="datePublished">May
+                    13, 2010
+                </time>
+                 • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
+                    itemprop="name">jason_corns</span></span>
+            </p>
+        </header>
 
-  <div class="post-content" itemprop="articleBody">
-    <p>In another post, <a href="/blog/accessibility/2010/04/26/vs-page-weight-accessibility-part-2.html">Jason vs. Page Weight – Accessibility Series, pt. 2</a>, I talked about a solving page weight problem I had with a client.<!--more-->  In the end, the client decided to put a lot of data on a single page.  In my opinion, this would have been a great time to use AJAX to pull in the data rather than just pushing it all to the page at load.  The problem with AJAX is that it relies on JavaScript (reliance may, in fact, be too weak a term, honestly) and so would not have been ideal for search engines and would not have provided accessible page content.  We could fix that by linking to pages with additional content, but we really want to use AJAX to show the data on a single page for all visitors with JavaScript enabled.  So, we just do both.</p>
+        <div class="post-content" itemprop="articleBody">
+            <p>In another post, <a href="/blog/accessibility/2010/04/26/vs-page-weight-accessibility-part-2.html">Jason vs. Page Weight – Accessibility Series, pt. 2</a>, I talked about a solving page weight problem I had with a client.<!--more-->  In the end, the client decided to put a lot of data on a single page.  In my opinion, this would have been a great time to use AJAX to pull in the data rather than just pushing it all to the page at load.  The problem with AJAX is that it relies on JavaScript (reliance may, in fact, be too weak a term, honestly) and so would not have been ideal for search engines and would not have provided accessible page content.  We could fix that by linking to pages with additional content, but we really want to use AJAX to show the data on a single page for all visitors with JavaScript enabled.  So, we just do both.</p>
 
 <p>By leveraging the <a href="http://api.jquery.com/category/events/event-object/#post-201">preventDefault method</a> available in the jQuery library (this is actually a JavaScript call, and exists outside of jQuery.  See the <a href="http://www.w3.org/TR/2001/WD-DOM-Level-3-Events-20010823/events.html#Events-Event-preventDefault">W3C write up</a>.) we can provide a page that is static, accessible HTML content by default, but picks up some dynamic interest at page load.  Note: some of the following examples presuppose a single domain; using AJAX to load content from other pages can easily get into <a href="http://en.wikipedia.org/wiki/Cross-site_scripting">cross-site scripting</a> issues.  If you control the server being accessed, you can manage the cross-origin request permissions by setting the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS">HTTP access control</a>.</p>
 
@@ -117,11 +122,11 @@
 
 <p>Why would the methods in this post be useful?  With this code,  we are unobtrusively adding click event handlers to targeted links, but we are doing so without actually coding “onclick=’…’” or setting href=”javascript:function()”.  If your visitors have <a href="http://www.webdesignerdepot.com/2010/02/how-to-plan-for-the-absence-of-javascript/">JavaScript disabled</a>, then they will get the benefit of linked content.  If JavaScript is enabled, they will get the benefit of dynamic content display, without leaving the page.  <em>Win-win</em>.</p>
 
-  </div>
-
-</article>
-
         </div>
+
+    </article>
+</div>
+
         <div class="col-xs-12 col-md-2 col-md-pull-10 aside">
             <h2>test for echo</h2>
         </div>
