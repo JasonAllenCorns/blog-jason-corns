@@ -1,0 +1,23 @@
+// Custom Theme for WanderingCreative.com by Jason Corns
+// wc_dark
+// wanderingcreative.com
+// Licensed Private
+
+
+%sidebar-fullheight {
+  bottom: 0; //makes full-height
+  height: 100%;
+}
+@mixin wc_theme () {
+  .off-canvas {
+    @extend %sidebar-fullheight;
+  }
+  .off-canvas>.row.column {
+    @extend %sidebar-fullheight;
+    background: transparent url(/img/sidebar/profile.jpg) no-repeat center top;
+    background-size: cover;
+    color: $white;
+    padding-top: 38vh;
+  }
+
+}

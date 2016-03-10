@@ -6,7 +6,6 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "syntax-highlighting";
 
-
 // Foundation 6
 @import 'foundation';
 
@@ -30,3 +29,9 @@ $global-flexbox: true !default;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 @include foundation-flex-classes;
+
+
+// Import local theme
+@import "themes/themes";
+
+@include wc_theme;
