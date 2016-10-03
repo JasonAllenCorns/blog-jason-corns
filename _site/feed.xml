@@ -6,23 +6,28 @@
 </description>
     <link>http://jasoncorns.com/</link>
     <atom:link href="http://jasoncorns.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 10 Mar 2016 11:04:05 -0800</pubDate>
-    <lastBuildDate>Thu, 10 Mar 2016 11:04:05 -0800</lastBuildDate>
-    <generator>Jekyll v3.0.1</generator>
+    <pubDate>Wed, 21 Sep 2016 10:16:51 -0700</pubDate>
+    <lastBuildDate>Wed, 21 Sep 2016 10:16:51 -0700</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>Exploring PassportJS and Express</title>
-        <description>&lt;p&gt;this and this. &lt;!--more--&gt;that and that and that.&lt;/p&gt;
+        <title>Jason vs. Dev-as-Test; Can engineers adopt the role of QA?</title>
+        <description>&lt;p&gt;In a non-stop, agile, cycle of continuous integration, maintaining production quality becomes a &lt;em&gt;very&lt;/em&gt; personal endeavour.  Changes to code, environment, or configuration must be made as if they are going straight to production, and this requires an incredibly consistent commitment to detail.
+&lt;!--more--&gt;
+The phrase “Software Engineering” takes up so much more space than these solitary words initially convey.
+Business analysts are tied to a successful client-facing product.
+Product owners are obligated to push and grow the product.
+Operations are tasked with supporting whatever-may-come.
+Creative paint an ever-changing vision from mere ideas.
+Engineers align requirements with limitations, and construct the vision.&lt;/p&gt;
+
+&lt;p&gt;Conspicuously absent from the list, though, is &lt;em&gt;Quality Assurance&lt;/em&gt;.  Arguably the most influential, QA remains a disjointed part of this process.&lt;/p&gt;
+
+&lt;p&gt;Classically-trained software engineers…..SDLC and TEST.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 19 Feb 2016 16:43:23 -0800</pubDate>
-        <link>http://jasoncorns.com/blog/2016/02/19/exploring-passport-and-express.html</link>
-        <guid isPermaLink="true">http://jasoncorns.com/blog/2016/02/19/exploring-passport-and-express.html</guid>
-        
-        <category>Node</category>
-        
-        <category>Express</category>
-        
-        <category>webserver</category>
+        <pubDate>Wed, 21 Sep 2016 09:54:23 -0700</pubDate>
+        <link>http://jasoncorns.com/blog/2016/09/21/versus-dev-as-test.html</link>
+        <guid isPermaLink="true">http://jasoncorns.com/blog/2016/09/21/versus-dev-as-test.html</guid>
         
         
         <category>blog</category>
@@ -206,7 +211,7 @@
 
 &lt;p&gt;No magic here.  Two links to two different pages (for simplicity, these are two pages within the same domain).&lt;/p&gt;
 
-&lt;h2 id=&quot;the-task&quot;&gt;The Task&lt;/h2&gt;
+&lt;p&gt;##The Task&lt;/p&gt;
 
 &lt;p&gt;Our task is to display content from a different page in a modal dialog.  Just to make it more fun, we’ll pull a specific part of the target page in our modal (denoted in each page by a div with ID of “target”).  To add that last little bit of shine to the action, we’ll prevent the URL from changing (more appropriately, we’ll stop any calls to change the &lt;em&gt;window location&lt;/em&gt;).&lt;/p&gt;
 
@@ -272,11 +277,11 @@
 
 &lt;p&gt;This is the moment we’ve been waiting for.  We have been following happily along wherever the DOM actions will take us but now, we are going to take control of the clicked anchor tag, and force it to do what we want.  Remember, &lt;em&gt;eventMarker&lt;/em&gt; is the event argument passed in initially.  Here, we are calling the JavaScript preventDefault method on the event.  Since our event is the result of the click of an anchor, the default action should be to alter the window location.  Instead, we have truncated the event prior to changing the address bar.  As you might imagine, this same method can be used for bookmark links as well – in the end, the preventDefault() method will prevent the hash from being appended to the URL.&lt;/p&gt;
 
-&lt;h3 id=&quot;why-preventdefault-instead-of-return-false&quot;&gt;Why &lt;em&gt;preventDefault()&lt;/em&gt; instead of return false;?&lt;/h3&gt;
+&lt;p&gt;###Why &lt;em&gt;preventDefault()&lt;/em&gt; instead of return false;?&lt;/p&gt;
 
 &lt;p&gt;Whenever  you run a return from a JavaScript function, you exit the function – completely preempting any further actions.  With &lt;em&gt;preventDefault()&lt;/em&gt;, further processing can be accomplished after the method call, within the same function.  Note that &lt;em&gt;eventMarker.stopPropogation()&lt;/em&gt; or &lt;em&gt;eventMarker.cancelBubble=true&lt;/em&gt; should be used to completely cancel event bubbling.&lt;/p&gt;
 
-&lt;h3 id=&quot;so-what&quot;&gt;So what?&lt;/h3&gt;
+&lt;p&gt;###So what?&lt;/p&gt;
 
 &lt;p&gt;Why would the methods in this post be useful?  With this code,  we are unobtrusively adding click event handlers to targeted links, but we are doing so without actually coding “onclick=’…’” or setting href=”javascript:function()”.  If your visitors have &lt;a href=&quot;http://www.webdesignerdepot.com/2010/02/how-to-plan-for-the-absence-of-javascript/&quot;&gt;JavaScript disabled&lt;/a&gt;, then they will get the benefit of linked content.  If JavaScript is enabled, they will get the benefit of dynamic content display, without leaving the page.  &lt;em&gt;Win-win&lt;/em&gt;.&lt;/p&gt;
 </description>
