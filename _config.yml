@@ -13,6 +13,21 @@ sass:
   style:            :compressed
 
 # Site settings
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      author: "jason_corns"
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "jason_corns"
+      layout: "post"
+
 title: jasoncorns.com
 subtitle: A few words from an avid HTMLer
 email: contact@jasoncorns.com

@@ -4,7 +4,6 @@ title:  "Jason vs. Accessibility, pt. 1"
 date:   2010-04-13 06:34:01 -0800
 categories: blog 
 tags: WEB-STANDARDS
-author: jason_corns
 ---
 
 Usability is finally starting to bubble to the top for Web Designers and Information Architects.<!--more-->  We are, as an industry, starting to realize that our audience exists outside of Photoshop canvas and beyond the code.  In fact, I have witnessed an increased focus on [JavaScript degradation](http://en.wikipedia.org/wiki/Unobtrusive_JavaScript) over the past few months – an unspoken admission that we, as web design professionals, should and shall provide web content to users of all browsing backgrounds and capabilities.  We have started providing, in earnest, content for the connoisseurs, the design savvy, the critics and the forward thinkers all in tandem with the conservative visitors, the visually impaired, our friends on mobile devices and those that, for whatever reason, just have JavaScript disabled.

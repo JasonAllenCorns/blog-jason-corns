@@ -1,110 +1,226 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Jason vs. Dev-as-Test; Can engineers adopt the role of QA?</title>
     <meta name="description" content="In a non-stop, agile, cycle of continuous integration, maintaining production quality becomes a very personal endeavour.  Changes to code, environment, or co...">
     <link rel="shortcut icon" href="/img/favicon.ico?v=2"/>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://jasoncorns.com/blog/2016/09/21/versus-dev-as-test.html">
-    <link rel="alternate" type="application/rss+xml" title="jasoncorns.com" href="http://jasoncorns.com/feed.xml">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href='/css/main.css'>
+    <link rel="canonical" href='http://jasoncorns.com/blog/2016/09/21/versus-dev-as-test.html'>
+    <link rel="alternate" type="application/rss+xml" title='jasoncorns.com' href='http://jasoncorns.com/feed.xml'>
 </head>
-
-
 <body>
-    <div class="off-canvas-wrapper">
-        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-            <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas>
-                <div class="row column">
-                    <br>
-                    <!--<img class="thumbnail" src="http://placehold.it/550x350">-->
-                    <h5>Mike Mikerson</h5>
-                    <p>Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus
-                        lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora
-                        torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo.</p>
-                    </div>
-                </div>
-                <div class="off-canvas-content" data-off-canvas-content>
-                    <div class="title-bar hide-for-large">
-                        <div class="title-bar-left">
-                            <button class="menu-icon" type="button" data-toggle="my-info" aria-expanded="false"
-                            aria-controls="my-info"></button>
-                            <span class="title-bar-title">Jason Corns | jasoncorns.com</span>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-10 col-md-push-2 blog-tiles">
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-        <header class="post-header">
-            <h1 class="post-title" itemprop="name headline">Jason vs. Dev-as-Test; Can engineers adopt the role of QA?</h1>
-            <p class="post-meta">
-                <time datetime="2016-09-21T09:54:23-07:00" itemprop="datePublished">Sep
-                    21, 2016
-                </time>
-                 • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
-                    itemprop="name">jason_corns</span></span>
-            </p>
-        </header>
+<!-- Header -->
+<div id="header">
 
-        <div class="post-content" itemprop="articleBody">
-            <p>In a non-stop, agile, cycle of continuous integration, maintaining production quality becomes a <em>very</em> personal endeavour.  Changes to code, environment, or configuration must be made as if they are going straight to production, and this requires an incredibly consistent commitment to detail.
-<!--more-->
-The phrase “Software Engineering” takes up so much more space than these solitary words initially convey.
-Business analysts are tied to a successful client-facing product.
-Product owners are obligated to push and grow the product.
-Operations are tasked with supporting whatever-may-come.
-Creative paint an ever-changing vision from mere ideas.
-Engineers align requirements with limitations, and construct the vision.</p>
+    <div class="top">
 
-<p>Conspicuously absent from the list, though, is <em>Quality Assurance</em>.  Arguably the most influential, QA remains a disjointed part of this process.</p>
-
-<p>Classically-trained software engineers…..SDLC and TEST.</p>
-
+        <!-- Logo -->
+        <div id="logo">
+          
+            <span class="image avatar48"><img src='/img/sidebar/avatar.jpg' alt="" /></span>
+            <h1 id="title">Jason Corns</h1>
+            <p>Software Architect</p>
+          
         </div>
 
-    </article>
+        <!-- Nav -->
+        <nav id="nav">
+            <!--
+
+              Prologue's nav expects links in one of two formats:
+
+              1. Hash link (scrolls to a different section within the page)
+
+                 <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+              2. Standard link (sends the user to another page/site)
+
+                 <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+            -->
+            <ul>
+                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                <li><a href="#blog" id="blog-link" class="skel-layers-ignoreHref"><span class="icon fa-th">blog</span></a></li>
+                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="bottom">
+
+        <!-- Social Icons -->
+        <ul class="icons">
+            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+            <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+            <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+
+    </div>
+
 </div>
 
-                    <footer class="footer">
-                        <div class="row">
-                            <div class="small-12 medium-6 columns">
-                                <p class="logo hide-for-small-only"><i class="fi-target"></i> <em>jasoncorns.com</em></p>
-                                <p>Wandering the world of code design and application architecture, absorbing all the Creative opportunities in this wonderful industry of ours.
-</p>
-                                <p class="footer-links">
-                                    <a href="#">Blog Home</a>
-                                    <a href="#">About</a>
-                                </p>
-                                <ul class="inline-list social">
+<!-- Main -->
+<div id="main">
 
-                                    
+    <!-- Intro -->
+    <section id="top" class="one dark cover">
+        <div class="container">
 
-                                    
-                                </ul>
-                                <p class="copywrite">© 2016</p>
-                                <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-                            </div>
-                            <div class="small-12 medium-6 medium-push-6 columns">
-                                <p class="logo show-for-small-only"><i class="fi-target"></i> <em>jasoncorns.com</em></p>
-                                <div class="row">
-                                    <div class="medium-9 medium-push-3 columns">
-                                        ABOUTME.COM
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
+            <header>
+                <h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
+                    site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
+                <p>Ligula scelerisque justo sem accumsan diam quis<br />
+                    vitae natoque dictum sollicitudin elementum.</p>
+            </header>
+
+            <footer>
+                <a href="#blog" class="button scrolly">Magna Aliquam</a>
+            </footer>
+
+        </div>
+    </section>
+
+    <!-- blog -->
+    <section id="blog" class="two">
+        <div class="container">
+
+            <header>
+                <h2>Blog</h2>
+            </header>
+
+            <p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+                egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+                Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
+                fusce hendrerit lacus ridiculus.</p>
+
+            <div class="row">
+                <div class="4u 12u$(mobile)">
+                    <article class="item">
+                        <a href="#" class="image fit"><img src='/img/pic02.jpg' alt="" /></a>
+                        <header>
+                            <h3>Ipsum Feugiat</h3>
+                        </header>
+                    </article>
+                    <article class="item">
+                        <a href="#" class="image fit"><img src='/img/pic03.jpg' alt="" /></a>
+                        <header>
+                            <h3>Rhoncus Semper</h3>
+                        </header>
+                    </article>
+                </div>
+                <div class="4u 12u$(mobile)">
+                    <article class="item">
+                        <a href="#" class="image fit"><img src='/img/pic04.jpg' alt="" /></a>
+                        <header>
+                            <h3>Magna Nullam</h3>
+                        </header>
+                    </article>
+                    <article class="item">
+                        <a href="#" class="image fit"><img src='/img/pic05.jpg' alt="" /></a>
+                        <header>
+                            <h3>Natoque Vitae</h3>
+                        </header>
+                    </article>
+                </div>
+                <div class="4u$ 12u$(mobile)">
+                    <article class="item">
+                        <a href="#" class="image fit"><img src='/img/pic06.jpg' alt="" /></a>
+                        <header>
+                            <h3>Dolor Penatibus</h3>
+                        </header>
+                    </article>
+                    <article class="item">
+                        <a href="#" class="image fit"><img src='/img/pic07.jpg' alt="" /></a>
+                        <header>
+                            <h3>Orci Convallis</h3>
+                        </header>
+                    </article>
                 </div>
             </div>
-        </div>
-        
-<script src="assets/javascripts/vendor/jquery/jquery-2.1.4.min.js"></script>
-<script src="assets/javascripts/foundation.js"></script>
-<script src="assets/javascripts/scripts.js"></script>
-    </body>
 
-    </html>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="three">
+        <div class="container">
+
+            <header>
+                <h2>About Me</h2>
+            </header>
+
+            <a href="#" class="image featured"><img src='/img/pic08.jpg' alt="" /></a>
+
+            <p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
+                ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
+                laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
+                parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+                dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
+                ornare iaculis.</p>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="four">
+        <div class="container">
+
+            <header>
+                <h2>Contact</h2>
+            </header>
+
+            <p>Elementum sem parturient nulla quam placerat viverra
+                mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
+                donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
+                orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+
+            <form method="post" action="#">
+                <div class="row">
+                    <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+                    <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+                    <div class="12u$">
+                        <textarea name="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="12u$">
+                        <input type="submit" value="Send Message" />
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+
+    <!-- Copyright -->
+    <ul class="copyright">
+        <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+
+</div>
+
+<!-- Scripts -->
+<script src='/assets/js/jquery.min.js'></script>
+<script src='/assets/js/jquery.scrolly.min.js'></script>
+<script src='/assets/js/jquery.scrollzer.min.js'></script>
+<script src='/assets/js/skel.min.js'></script>
+<script src='/assets/js/util.js'></script>
+<script src='/assets/js/main.js'></script>
+
+</body>
+</html>

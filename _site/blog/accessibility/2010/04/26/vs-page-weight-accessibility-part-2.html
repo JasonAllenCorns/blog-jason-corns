@@ -1,120 +1,226 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Jason vs. Page Weight – Accessibility Series, pt. 2</title>
     <meta name="description" content="When the topic of Web Accessibility arises, I immediately think of a standard set of keywords: ADA/508 compliance, information architecture, JavaScript, well...">
     <link rel="shortcut icon" href="/img/favicon.ico?v=2"/>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://jasoncorns.com/blog/accessibility/2010/04/26/vs-page-weight-accessibility-part-2.html">
-    <link rel="alternate" type="application/rss+xml" title="jasoncorns.com" href="http://jasoncorns.com/feed.xml">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href='/css/main.css'>
+    <link rel="canonical" href='http://jasoncorns.com/blog/accessibility/2010/04/26/vs-page-weight-accessibility-part-2.html'>
+    <link rel="alternate" type="application/rss+xml" title='jasoncorns.com' href='http://jasoncorns.com/feed.xml'>
 </head>
-
-
 <body>
-    <div class="off-canvas-wrapper">
-        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-            <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas>
-                <div class="row column">
-                    <br>
-                    <!--<img class="thumbnail" src="http://placehold.it/550x350">-->
-                    <h5>Mike Mikerson</h5>
-                    <p>Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus
-                        lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora
-                        torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo.</p>
-                    </div>
-                </div>
-                <div class="off-canvas-content" data-off-canvas-content>
-                    <div class="title-bar hide-for-large">
-                        <div class="title-bar-left">
-                            <button class="menu-icon" type="button" data-toggle="my-info" aria-expanded="false"
-                            aria-controls="my-info"></button>
-                            <span class="title-bar-title">Jason Corns | jasoncorns.com</span>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-10 col-md-push-2 blog-tiles">
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-        <header class="post-header">
-            <h1 class="post-title" itemprop="name headline">Jason vs. Page Weight – Accessibility Series, pt. 2</h1>
-            <p class="post-meta">
-                <time datetime="2010-04-26T22:55:34-07:00" itemprop="datePublished">Apr
-                    26, 2010
-                </time>
-                 • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
-                    itemprop="name">jason_corns</span></span>
-            </p>
-        </header>
+<!-- Header -->
+<div id="header">
 
-        <div class="post-content" itemprop="articleBody">
-            <p>When the topic of Web Accessibility arises, I immediately think of a standard set of keywords: ADA/508 compliance, information architecture, JavaScript, well-formed HTML, ALT text, etc…<!--more-->  This list represents the things that, as I have been taught over the past few years, have significant impact on the accessibility of a page and a site.</p>
+    <div class="top">
 
-<p>Recently, during an accessibility assessment, I discovered a new factor to consider: page weight.  Page Weight should not be a new concept to any web designer.  Ever since the days of dial-up dominance, we have been scrutinizing every paragraph, abusing calculators to determine the most appropriate image collection, mapping the dimension and location of every new icon and rollover in our sprite, clocking speed tests and ripping out every non-essential bit of white-space we could find.  I admit that I have become a little lax, allowing more and larger images on my page for the sake of design, all the while whispering silent apologies to the dial-up community.</p>
-
-<p>During the aforementioned assessment, we paid special attention to one set of pages in particular.  Our project, the public-facing site of a university, has a section outlining each of the degree programs.  The challenge the client faced is one that many education websites face: how to appropriately define a program and all its structural elements, without destroying the visitor’s sense of connection to the program itself.  The client’s decision was to provide all the program details on one page, rather than just linking from the program page to course description pages.  Program details include the course subject, required course list, course descriptions and, in some cases, subject description.  For a full program page, we discovered the amount of information could be….daunting.  With nine or ten requirement categories and as many as fourteen course requirements per category, we were looking at a number of pages with an HTML weight of 130 kb.  Once the images were added in, we were well above 200 kb in page weight which could take up to 30 seconds to load on a 56 Kbps modem.</p>
-
-<p>As it turns out, the page weight is a necessary evil for this particular page.  We had two options, in order to maintain an accessible data set: put all the information on one page or link to it all from one page.  All the data on one page makes the navigation of the program easier for the site visitor, but overloads the ideal weight.  Linking from the program page to each course would have delivered a light page but would have forced a lot of usage of the back button.</p>
-
-<p>So what is the ideal solution?  For this client, the massive page was the preferred solution.</p>
-
-<p>Alternatively, we could have used a bit of JQuery magic to deliver a lightweight page, with links to additional content, that was also slick and usable. I cover the details of this option in an upcoming post (Jason vs. Anchor Tags – Getting Results with the PreventDefault method) but the idea is this:</p>
-
-<p>Provide the user with an appropriate amount of content – an amount that would adequately describe the program- and supply links to the detail pages of each course.  When a visiting user has JavaScript disabled, the content would behave as you might expect: the visitor reads the program description, clicks a link and navigates to a course description page.</p>
-
-<p>When JavaScript is available, however, we capture the click event of the anchor and, since we’re in the same domain as the source content, pull the source content into a modal dialog (like ColorBox, if you’re in the market for a good one) via AJAX request and prevent the default action of the link from firing.  We’ll use the HREF property of the anchor as the URI to the source.  Further, we’ll use the anchor’s class as the selector target (See jQuery’s class selector for more details).</p>
-
-<p>A few things to note -</p>
-
-<p>We did not have to include any onclick property to return false at the click, which helps us maintain our unobtrusive JavaScript.
-Since we would be relying on the anchor’s class when attaching click events, we can flag any anchor to be skipped just by adding another name to a compound class of the anchor OR omitting a target class name.
-Degradation is smooth and predictable, since we’re just talking about anchors with standard href properties.  Without the JavaScript to cause the Modal onclick, the link will fire and redirect the visitor to the uri referenced in the href.
-With the JavaScript in place, we will have taken a very large page and trimmed it down to a manageable size, and successfully merged accessibility with usability.</p>
-
+        <!-- Logo -->
+        <div id="logo">
+          
+            <span class="image avatar48"><img src='/img/sidebar/avatar.jpg' alt="" /></span>
+            <h1 id="title">Jason Corns</h1>
+            <p>Software Architect</p>
+          
         </div>
 
-    </article>
+        <!-- Nav -->
+        <nav id="nav">
+            <!--
+
+              Prologue's nav expects links in one of two formats:
+
+              1. Hash link (scrolls to a different section within the page)
+
+                 <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+              2. Standard link (sends the user to another page/site)
+
+                 <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+            -->
+            <ul>
+                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                <li><a href="#blog" id="blog-link" class="skel-layers-ignoreHref"><span class="icon fa-th">blog</span></a></li>
+                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="bottom">
+
+        <!-- Social Icons -->
+        <ul class="icons">
+            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+            <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+            <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+
+    </div>
+
 </div>
 
-                    <footer class="footer">
-                        <div class="row">
-                            <div class="small-12 medium-6 columns">
-                                <p class="logo hide-for-small-only"><i class="fi-target"></i> <em>jasoncorns.com</em></p>
-                                <p>Wandering the world of code design and application architecture, absorbing all the Creative opportunities in this wonderful industry of ours.
-</p>
-                                <p class="footer-links">
-                                    <a href="#">Blog Home</a>
-                                    <a href="#">About</a>
-                                </p>
-                                <ul class="inline-list social">
+<!-- Main -->
+<div id="main">
 
-                                    
+    <!-- Intro -->
+    <section id="top" class="one dark cover">
+        <div class="container">
 
-                                    
-                                </ul>
-                                <p class="copywrite">© 2016</p>
-                                <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-                            </div>
-                            <div class="small-12 medium-6 medium-push-6 columns">
-                                <p class="logo show-for-small-only"><i class="fi-target"></i> <em>jasoncorns.com</em></p>
-                                <div class="row">
-                                    <div class="medium-9 medium-push-3 columns">
-                                        ABOUTME.COM
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
+            <header>
+                <h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
+                    site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
+                <p>Ligula scelerisque justo sem accumsan diam quis<br />
+                    vitae natoque dictum sollicitudin elementum.</p>
+            </header>
+
+            <footer>
+                <a href="#blog" class="button scrolly">Magna Aliquam</a>
+            </footer>
+
+        </div>
+    </section>
+
+    <!-- blog -->
+    <section id="blog" class="two">
+        <div class="container">
+
+            <header>
+                <h2>Blog</h2>
+            </header>
+
+            <p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+                egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+                Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
+                fusce hendrerit lacus ridiculus.</p>
+
+            <div class="row">
+                <div class="4u 12u$(mobile)">
+                    <article class="item">
+                        <a href="#" class="image fit"><img src='/img/pic02.jpg' alt="" /></a>
+                        <header>
+                            <h3>Ipsum Feugiat</h3>
+                        </header>
+                    </article>
+                    <article class="item">
+                        <a href="#" class="image fit"><img src='/img/pic03.jpg' alt="" /></a>
+                        <header>
+                            <h3>Rhoncus Semper</h3>
+                        </header>
+                    </article>
+                </div>
+                <div class="4u 12u$(mobile)">
+                    <article class="item">
+                        <a href="#" class="image fit"><img src='/img/pic04.jpg' alt="" /></a>
+                        <header>
+                            <h3>Magna Nullam</h3>
+                        </header>
+                    </article>
+                    <article class="item">
+                        <a href="#" class="image fit"><img src='/img/pic05.jpg' alt="" /></a>
+                        <header>
+                            <h3>Natoque Vitae</h3>
+                        </header>
+                    </article>
+                </div>
+                <div class="4u$ 12u$(mobile)">
+                    <article class="item">
+                        <a href="#" class="image fit"><img src='/img/pic06.jpg' alt="" /></a>
+                        <header>
+                            <h3>Dolor Penatibus</h3>
+                        </header>
+                    </article>
+                    <article class="item">
+                        <a href="#" class="image fit"><img src='/img/pic07.jpg' alt="" /></a>
+                        <header>
+                            <h3>Orci Convallis</h3>
+                        </header>
+                    </article>
                 </div>
             </div>
-        </div>
-        
-<script src="assets/javascripts/vendor/jquery/jquery-2.1.4.min.js"></script>
-<script src="assets/javascripts/foundation.js"></script>
-<script src="assets/javascripts/scripts.js"></script>
-    </body>
 
-    </html>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="three">
+        <div class="container">
+
+            <header>
+                <h2>About Me</h2>
+            </header>
+
+            <a href="#" class="image featured"><img src='/img/pic08.jpg' alt="" /></a>
+
+            <p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
+                ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
+                laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
+                parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+                dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
+                ornare iaculis.</p>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="four">
+        <div class="container">
+
+            <header>
+                <h2>Contact</h2>
+            </header>
+
+            <p>Elementum sem parturient nulla quam placerat viverra
+                mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
+                donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
+                orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+
+            <form method="post" action="#">
+                <div class="row">
+                    <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+                    <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+                    <div class="12u$">
+                        <textarea name="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="12u$">
+                        <input type="submit" value="Send Message" />
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+
+    <!-- Copyright -->
+    <ul class="copyright">
+        <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+
+</div>
+
+<!-- Scripts -->
+<script src='/assets/js/jquery.min.js'></script>
+<script src='/assets/js/jquery.scrolly.min.js'></script>
+<script src='/assets/js/jquery.scrollzer.min.js'></script>
+<script src='/assets/js/skel.min.js'></script>
+<script src='/assets/js/util.js'></script>
+<script src='/assets/js/main.js'></script>
+
+</body>
+</html>
