@@ -2,7 +2,7 @@
 layout: post
 title:  "Jason vs. Page Weight – Accessibility Series, pt. 2"
 date:   2010-04-26 21:55:34 -0800
-categories: blog accessibility
+categories: blog
 tags: WEB-STANDARDS
 author: jason_corns
 ---

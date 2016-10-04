@@ -6,9 +6,22 @@
 </description>
     <link>http://jasoncorns.com/</link>
     <atom:link href="http://jasoncorns.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Oct 2016 10:44:28 -0700</pubDate>
-    <lastBuildDate>Tue, 04 Oct 2016 10:44:28 -0700</lastBuildDate>
+    <pubDate>Tue, 04 Oct 2016 11:19:36 -0700</pubDate>
+    <lastBuildDate>Tue, 04 Oct 2016 11:19:36 -0700</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>git pulling a bad merge</title>
+        <description>&lt;p&gt;Nightmare scenario: after working on a feature branch for a while, the code is rebased, conflicts are resolved, and the branch is merged to the running master branch - with undetected errors.  Now what?&lt;!--more--&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 Oct 2016 11:18:25 -0700</pubDate>
+        <link>http://jasoncorns.com/blog/2016/10/04/git-pulling-a-bad-merge.html</link>
+        <guid isPermaLink="true">http://jasoncorns.com/blog/2016/10/04/git-pulling-a-bad-merge.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Jason vs. Dev-as-Test; Can engineers adopt the role of QA?</title>
@@ -26,8 +39,8 @@ Engineers align requirements with limitations, and construct the vision.&lt;/p&g
 &lt;p&gt;Classically-trained software engineers…..SDLC and TEST.&lt;/p&gt;
 </description>
         <pubDate>Wed, 21 Sep 2016 09:54:23 -0700</pubDate>
-        <link>http://jasoncorns.com/blog/2016/09/21/versus-dev-as-test.html</link>
-        <guid isPermaLink="true">http://jasoncorns.com/blog/2016/09/21/versus-dev-as-test.html</guid>
+        <link>http://jasoncorns.com/blog/2016/09/21/dev-as-test.html</link>
+        <guid isPermaLink="true">http://jasoncorns.com/blog/2016/09/21/dev-as-test.html</guid>
         
         
         <category>blog</category>
@@ -81,8 +94,8 @@ Engineers align requirements with limitations, and construct the vision.&lt;/p&g
 &lt;p&gt;Standard InternetExplorer disclaimer, blah blah blah.  This solution uses box-shadow and multi-stop gradients – two things that are not fully supported by IE.&lt;/p&gt;
 </description>
         <pubDate>Thu, 28 Mar 2013 12:14:23 -0700</pubDate>
-        <link>http://jasoncorns.com/blog/2013/03/28/versus-css-triangle.html</link>
-        <guid isPermaLink="true">http://jasoncorns.com/blog/2013/03/28/versus-css-triangle.html</guid>
+        <link>http://jasoncorns.com/blog/2013/03/28/css-triangle.html</link>
+        <guid isPermaLink="true">http://jasoncorns.com/blog/2013/03/28/css-triangle.html</guid>
         
         
         <category>blog</category>
@@ -104,8 +117,8 @@ Engineers align requirements with limitations, and construct the vision.&lt;/p&g
 &lt;p&gt;Upstatement, the Filament Group and a few contractors (notably, &lt;a href=&quot;http://www.twitter.com/beep&quot;&gt;Ethan Marcotte&lt;/a&gt;, &lt;a href=&quot;http://unstoppablerobotninja.com/entry/the-boston-globe/&quot;&gt;write-up&lt;/a&gt;) worked together to create this masterpiece. &lt;a href=&quot;http://upstatement.com/portfolio/boston-globe/&quot;&gt;Upstatement’s write-up&lt;/a&gt; is pretty thorough. If you’re into it, give it a read. &lt;a href=&quot;http://twitter.com/adactio&quot;&gt;Jeremy Keith&lt;/a&gt; has another great &lt;a href=&quot;http://adactio.com/journal/4862/&quot;&gt;journal article&lt;/a&gt; about the &lt;a href=&quot;http://www.bostonglobe.com&quot;&gt;Boston Globe’s new site&lt;/a&gt;, and the response he’s witnessed.&lt;/p&gt;
 </description>
         <pubDate>Thu, 15 Sep 2011 13:16:18 -0700</pubDate>
-        <link>http://jasoncorns.com/blog/2011/09/15/jealousy-a-quick-look-at-the-Responsive-Redesign-of-the-Boston-Globe.html</link>
-        <guid isPermaLink="true">http://jasoncorns.com/blog/2011/09/15/jealousy-a-quick-look-at-the-Responsive-Redesign-of-the-Boston-Globe.html</guid>
+        <link>http://jasoncorns.com/blog/2011/09/15/quick-look-Responsive-Redesign-Boston-Globe.html</link>
+        <guid isPermaLink="true">http://jasoncorns.com/blog/2011/09/15/quick-look-Responsive-Redesign-Boston-Globe.html</guid>
         
         <category>CSS</category>
         
@@ -178,8 +191,8 @@ Engineers align requirements with limitations, and construct the vision.&lt;/p&g
 &lt;p&gt;Bonus content: this concept can be rewritten to use Object Oriented CSS (&lt;a href=&quot;http://github.com/stubbornella/oocss/wiki&quot;&gt;stubbornella@github&lt;/a&gt; and &lt;a href=&quot;http://oocss.org/&quot;&gt;object-oriented CSS&lt;/a&gt;).  Check back later for that post!&lt;/p&gt;
 </description>
         <pubDate>Sat, 16 Oct 2010 12:05:18 -0700</pubDate>
-        <link>http://jasoncorns.com/blog/accessibility/2010/10/16/vs-semantic-css-establishing-a-visual-outline.html</link>
-        <guid isPermaLink="true">http://jasoncorns.com/blog/accessibility/2010/10/16/vs-semantic-css-establishing-a-visual-outline.html</guid>
+        <link>http://jasoncorns.com/blog/2010/10/16/establishing-visual-css-outline.html</link>
+        <guid isPermaLink="true">http://jasoncorns.com/blog/2010/10/16/establishing-visual-css-outline.html</guid>
         
         <category>CODE-SAMPLE</category>
         
@@ -190,13 +203,11 @@ Engineers align requirements with limitations, and construct the vision.&lt;/p&g
         
         <category>blog</category>
         
-        <category>accessibility</category>
-        
       </item>
     
       <item>
         <title>Jason vs. Anchor Tags – Getting Results with the preventDefault method</title>
-        <description>&lt;p&gt;In another post, &lt;a href=&quot;/blog/accessibility/2010/04/26/vs-page-weight-accessibility-part-2.html&quot;&gt;Jason vs. Page Weight – Accessibility Series, pt. 2&lt;/a&gt;, I talked about a solving page weight problem I had with a client.&lt;!--more--&gt;  In the end, the client decided to put a lot of data on a single page.  In my opinion, this would have been a great time to use AJAX to pull in the data rather than just pushing it all to the page at load.  The problem with AJAX is that it relies on JavaScript (reliance may, in fact, be too weak a term, honestly) and so would not have been ideal for search engines and would not have provided accessible page content.  We could fix that by linking to pages with additional content, but we really want to use AJAX to show the data on a single page for all visitors with JavaScript enabled.  So, we just do both.&lt;/p&gt;
+        <description>&lt;p&gt;In another post, &lt;a href=&quot;/blog/2010/04/26/page-weight-accessibility-part-2.html&quot;&gt;Jason vs. Page Weight – Accessibility Series, pt. 2&lt;/a&gt;, I talked about a solving page weight problem I had with a client.&lt;!--more--&gt;  In the end, the client decided to put a lot of data on a single page.  In my opinion, this would have been a great time to use AJAX to pull in the data rather than just pushing it all to the page at load.  The problem with AJAX is that it relies on JavaScript (reliance may, in fact, be too weak a term, honestly) and so would not have been ideal for search engines and would not have provided accessible page content.  We could fix that by linking to pages with additional content, but we really want to use AJAX to show the data on a single page for all visitors with JavaScript enabled.  So, we just do both.&lt;/p&gt;
 
 &lt;p&gt;By leveraging the &lt;a href=&quot;http://api.jquery.com/category/events/event-object/#post-201&quot;&gt;preventDefault method&lt;/a&gt; available in the jQuery library (this is actually a JavaScript call, and exists outside of jQuery.  See the &lt;a href=&quot;http://www.w3.org/TR/2001/WD-DOM-Level-3-Events-20010823/events.html#Events-Event-preventDefault&quot;&gt;W3C write up&lt;/a&gt;.) we can provide a page that is static, accessible HTML content by default, but picks up some dynamic interest at page load.  Note: some of the following examples presuppose a single domain; using AJAX to load content from other pages can easily get into &lt;a href=&quot;http://en.wikipedia.org/wiki/Cross-site_scripting&quot;&gt;cross-site scripting&lt;/a&gt; issues.  If you control the server being accessed, you can manage the cross-origin request permissions by setting the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS&quot;&gt;HTTP access control&lt;/a&gt;.&lt;/p&gt;
 
@@ -286,8 +297,8 @@ Engineers align requirements with limitations, and construct the vision.&lt;/p&g
 &lt;p&gt;Why would the methods in this post be useful?  With this code,  we are unobtrusively adding click event handlers to targeted links, but we are doing so without actually coding “onclick=’…’” or setting href=”javascript:function()”.  If your visitors have &lt;a href=&quot;http://www.webdesignerdepot.com/2010/02/how-to-plan-for-the-absence-of-javascript/&quot;&gt;JavaScript disabled&lt;/a&gt;, then they will get the benefit of linked content.  If JavaScript is enabled, they will get the benefit of dynamic content display, without leaving the page.  &lt;em&gt;Win-win&lt;/em&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 13 May 2010 19:22:49 -0700</pubDate>
-        <link>http://jasoncorns.com/blog/2010/05/13/vs-anchor-tags-getting-results-with-preventdefault.html</link>
-        <guid isPermaLink="true">http://jasoncorns.com/blog/2010/05/13/vs-anchor-tags-getting-results-with-preventdefault.html</guid>
+        <link>http://jasoncorns.com/blog/2010/05/13/getting-results-with-preventdefault.html</link>
+        <guid isPermaLink="true">http://jasoncorns.com/blog/2010/05/13/getting-results-with-preventdefault.html</guid>
         
         <category>AJAX</category>
         
@@ -330,15 +341,13 @@ Degradation is smooth and predictable, since we’re just talking about anchors 
 With the JavaScript in place, we will have taken a very large page and trimmed it down to a manageable size, and successfully merged accessibility with usability.&lt;/p&gt;
 </description>
         <pubDate>Mon, 26 Apr 2010 22:55:34 -0700</pubDate>
-        <link>http://jasoncorns.com/blog/accessibility/2010/04/26/vs-page-weight-accessibility-part-2.html</link>
-        <guid isPermaLink="true">http://jasoncorns.com/blog/accessibility/2010/04/26/vs-page-weight-accessibility-part-2.html</guid>
+        <link>http://jasoncorns.com/blog/2010/04/26/page-weight-accessibility-part-2.html</link>
+        <guid isPermaLink="true">http://jasoncorns.com/blog/2010/04/26/page-weight-accessibility-part-2.html</guid>
         
         <category>WEB-STANDARDS</category>
         
         
         <category>blog</category>
-        
-        <category>accessibility</category>
         
       </item>
     
@@ -355,8 +364,8 @@ With the JavaScript in place, we will have taken a very large page and trimmed i
 &lt;p&gt;I also suggest reading W3C’s Web Accessibility Initiative’s article about &lt;a href=&quot;http://www.w3.org/WAI/mobile/&quot;&gt;making websites accessible for users with disabilities and for mobile devices&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 13 Apr 2010 07:34:01 -0700</pubDate>
-        <link>http://jasoncorns.com/blog/2010/04/13/vs-accessibility-pt-1.html</link>
-        <guid isPermaLink="true">http://jasoncorns.com/blog/2010/04/13/vs-accessibility-pt-1.html</guid>
+        <link>http://jasoncorns.com/blog/2010/04/13/accessibility-pt-1.html</link>
+        <guid isPermaLink="true">http://jasoncorns.com/blog/2010/04/13/accessibility-pt-1.html</guid>
         
         <category>WEB-STANDARDS</category>
         

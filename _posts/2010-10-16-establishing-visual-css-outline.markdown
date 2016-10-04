@@ -2,7 +2,7 @@
 layout: post
 title:  "Jason vs. Semantic CSS - establishing a visual outline in your stylesheet"
 date:   2010-10-16 11:05:18 -0800
-categories: blog accessibility
+categories: blog
 tags: CODE-SAMPLE CSS TIPS
 author: jason_corns
 ---
