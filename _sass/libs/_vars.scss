@@ -1,22 +1,101 @@
 // Misc.
-	$misc: (
-		z-index-base:	10000
-	);
+$misc: (
+        z-index-base: 10000
+);
 
 // Duration.
-	$duration: (
-		header: 0.5s
-	);
+$duration: (
+        header: 0.5s
+);
 
 // Size.
-	$size: (
-		header: 275px
-	);
+$size: (
+        header: 275px
+);
 
 // Font.
-	$font: (
-	);
+$font: (
+        family: ("Trebuchet MS", Geneva, Arial, Verdana, sans-serif),
+        family-fixed: ('Courier New', monospace),
+        weight: 300,
+        weight-bold: 400,
+        weight-thin: 100,
+        size: 24px
+);
 
 // Palette.
-	$palette: (
-	);
+$color1: rgba(136, 136, 136, 1);
+$color2: rgba(64, 78, 92, 1);
+$color3: rgba(79, 98, 114, 1);
+$color4: rgba(180, 184, 197, 1);
+$color5: rgba(183, 195, 243, 1);
+$palette: (
+        bg: #fff,
+        fg: $color1,
+        shadow: mix($color1, #666, 25%),
+        fg-link: #2B6EF1,
+        fg-bold: mix($color1, #666, 10%),
+        fg-light: mix($color1, #fff, 10%),
+        fg-heading: mix($color1, #666, 75%),
+        fg-heading-link: mix($color1, #333, 25%),
+        border: darken($color1, 18%),
+        border-bg: lighten($color1, 12%),
+        border2: desaturate($color1, 50%),
+        border2-bg: darken(desaturate($color1, 50%), 12%),
+        accent1: (
+                bg: mix($color2, #fff, 22%),
+                fg: $color2,
+                shadow: mix($color2, #666, 25%),
+                fg-link: #2B6EF1,
+                fg-bold: mix($color2, #666, 10%),
+                fg-light: mix($color2, #fff, 10%),
+                fg-heading: mix($color2, #666, 75%),
+                fg-heading-link: mix($color2, #333, 25%),
+                border: darken($color2, 18%),
+                border-bg: lighten($color2, 12%),
+                border2: desaturate($color2, 50%),
+                border2-bg: darken(desaturate($color2, 50%), 12%)
+        ),
+        accent2: (
+                bg: mix($color3, #fff, 22%),
+                fg: $color3,
+                shadow: mix($color3, #666, 25%),
+                fg-link: #2B6EF1,
+                fg-bold: mix($color3, #666, 10%),
+                fg-light: mix($color3, #fff, 10%),
+                fg-heading: mix($color3, #666, 75%),
+                fg-heading-link: mix($color3, #333, 25%),
+                border: darken($color3, 18%),
+                border-bg: lighten($color3, 12%),
+                border2: desaturate($color3, 50%),
+                border2-bg: darken(desaturate($color3, 50%), 12%)
+        ),
+        accent3: (
+                bg: mix($color4, #fff, 22%),
+                fg: $color4,
+                shadow: mix($color4, #666, 25%),
+                fg-link: #2B6EF1,
+                fg-bold: mix($color4, #666, 10%),
+                fg-light: mix($color4, #fff, 10%),
+                fg-heading: mix($color4, #666, 75%),
+                fg-heading-link: mix($color4, #333, 25%),
+                border: darken($color4, 18%),
+                border-bg: lighten($color4, 12%),
+                border2: desaturate($color4, 50%),
+                border2-bg: darken(desaturate($color4, 50%), 12%)
+        ),
+        accent4: (
+                bg: mix($color2, #fff, 22%),
+                fg: $color5,
+                shadow: mix($color5, #666, 25%),
+                fg-link: #2B6EF1,
+                fg-bold: mix($color5, #666, 10%),
+                fg-light: mix($color5, #fff, 10%),
+                fg-heading: mix($color5, #666, 75%),
+                fg-heading-link: mix($color5, #333, 25%),
+                border: darken($color5, 18%),
+                border-bg: lighten($color5, 12%),
+                border2: desaturate($color5, 50%),
+                border2-bg: darken(desaturate($color5, 50%), 12%)
+        )
+);

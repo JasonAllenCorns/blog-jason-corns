@@ -1,27 +1,39 @@
 ---
 layout: default
 ---
+<!-- blog -->
+<section id="blog" class="two">
+    <div class="container">
 
-<div class="callout primary">
-    <div class="row column">
-        <h1>Hello! This is the portfolio of a very witty person.</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed
-            urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam
-            mattis viverra. Nulla fringilla.</p>
-    </div>
-</div>
+        <header>
+            <h2>Blog</h2>
+        </header>
 
-<div class="row small-up-2 medium-up-3 large-up-4">
-        {% for post in site.posts %}
-    <div class="column">
-        <!--<img class="thumbnail" src="http://placehold.it/550x550">-->
-        <h5><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
-        <article>{{ post.excerpt | strip_html }}</article>
-        <footer>
-            <small class="text-muted">
-                {{ site.data.authors[post.author].name }} on <em>{{ post.date | date: "%b %-d, %Y" }}</em>
-            </small>
-        </footer>
+        <p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+            egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+            Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
+            fusce hendrerit lacus ridiculus.</p>
+
+        <div class="row">
+            {% for post in site.posts %}
+            <div class="4u 12u">
+                <article class="item">
+                    {% if post.hero %}
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="image fit"><img src='{{ post.hero | prepend: site.baseurl }}' alt="" /></a>
+                    {% endif %}
+                    <header>
+                        <h5><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
+                    </header>
+                    <p>
+                        {{ post.excerpt | strip_html }}
+                    </p>
+                    <footer>
+                        <small>{{ site.data.authors[post.author].name }} on <em>{{ post.date | date: "%b %-d, %Y" }}</em></small>
+                    </footer>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+
     </div>
-        {% endfor %}
-</div>
+</section>

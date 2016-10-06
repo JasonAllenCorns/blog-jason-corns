@@ -6,22 +6,9 @@
 </description>
     <link>http://jasoncorns.com/</link>
     <atom:link href="http://jasoncorns.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Oct 2016 11:19:36 -0700</pubDate>
-    <lastBuildDate>Tue, 04 Oct 2016 11:19:36 -0700</lastBuildDate>
+    <pubDate>Thu, 06 Oct 2016 00:36:36 -0700</pubDate>
+    <lastBuildDate>Thu, 06 Oct 2016 00:36:36 -0700</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
-    
-      <item>
-        <title>git pulling a bad merge</title>
-        <description>&lt;p&gt;Nightmare scenario: after working on a feature branch for a while, the code is rebased, conflicts are resolved, and the branch is merged to the running master branch - with undetected errors.  Now what?&lt;!--more--&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 04 Oct 2016 11:18:25 -0700</pubDate>
-        <link>http://jasoncorns.com/blog/2016/10/04/git-pulling-a-bad-merge.html</link>
-        <guid isPermaLink="true">http://jasoncorns.com/blog/2016/10/04/git-pulling-a-bad-merge.html</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
     
       <item>
         <title>Jason vs. Dev-as-Test; Can engineers adopt the role of QA?</title>

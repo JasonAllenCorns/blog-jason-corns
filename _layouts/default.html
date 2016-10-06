@@ -5,16 +5,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-<head>
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <link rel="shortcut icon" href="/img/favicon.ico?v=2"/>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href='{{ "/css/main.css" | prepend: site.baseurl }}'>
-    <link rel="canonical" href='{{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url }}'>
-    <link rel="alternate" type="application/rss+xml" title='{{ site.title }}' href='{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}'>
-</head>
+{% include head.html %}
 <body>
 
 <!-- Header -->
@@ -30,29 +21,9 @@
             {% if site.data.authors[page.author].occupation %}<p>{{ site.data.authors[page.author].occupation }}</p>{% endif %}
           {% endif %}
         </div>
-
-        <!-- Nav -->
-        <nav id="nav">
-            <!--
-
-              Prologue's nav expects links in one of two formats:
-
-              1. Hash link (scrolls to a different section within the page)
-
-                 <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-              2. Standard link (sends the user to another page/site)
-
-                 <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-
-            -->
-            <ul>
-                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-                <li><a href="#blog" id="blog-link" class="skel-layers-ignoreHref"><span class="icon fa-th">blog</span></a></li>
-                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-            </ul>
-        </nav>
+        {% if page.sidebar %}
+        {% include {{page.sidebar}} %}
+        {% endif %}
 
     </div>
 
@@ -73,86 +44,16 @@
 
 <!-- Main -->
 <div id="main">
+    ||| {{page.includeIntro}} |||
+    {% if page.includeIntro %}
+    {% include intro.html %}
+    {% endif %}
 
-    <!-- Intro -->
-    <section id="top" class="one dark cover">
-        <div class="container">
+    {{ content }}
 
-            <header>
-                <h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-                    site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-                <p>Ligula scelerisque justo sem accumsan diam quis<br />
-                    vitae natoque dictum sollicitudin elementum.</p>
-            </header>
+    {% if page.includeAbout %}
 
-            <footer>
-                <a href="#blog" class="button scrolly">Magna Aliquam</a>
-            </footer>
-
-        </div>
-    </section>
-
-    <!-- blog -->
-    <section id="blog" class="two">
-        <div class="container">
-
-            <header>
-                <h2>Blog</h2>
-            </header>
-
-            <p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-                egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-                Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-                fusce hendrerit lacus ridiculus.</p>
-
-            <div class="row">
-                <div class="4u 12u$(mobile)">
-                    <article class="item">
-                        <a href="#" class="image fit"><img src='{{ "/img/pic02.jpg" | prepend: site.baseurl }}' alt="" /></a>
-                        <header>
-                            <h3>Ipsum Feugiat</h3>
-                        </header>
-                    </article>
-                    <article class="item">
-                        <a href="#" class="image fit"><img src='{{ "/img/pic03.jpg" | prepend: site.baseurl }}' alt="" /></a>
-                        <header>
-                            <h3>Rhoncus Semper</h3>
-                        </header>
-                    </article>
-                </div>
-                <div class="4u 12u$(mobile)">
-                    <article class="item">
-                        <a href="#" class="image fit"><img src='{{ "/img/pic04.jpg" | prepend: site.baseurl }}' alt="" /></a>
-                        <header>
-                            <h3>Magna Nullam</h3>
-                        </header>
-                    </article>
-                    <article class="item">
-                        <a href="#" class="image fit"><img src='{{ "/img/pic05.jpg" | prepend: site.baseurl }}' alt="" /></a>
-                        <header>
-                            <h3>Natoque Vitae</h3>
-                        </header>
-                    </article>
-                </div>
-                <div class="4u$ 12u$(mobile)">
-                    <article class="item">
-                        <a href="#" class="image fit"><img src='{{ "/img/pic06.jpg" | prepend: site.baseurl }}' alt="" /></a>
-                        <header>
-                            <h3>Dolor Penatibus</h3>
-                        </header>
-                    </article>
-                    <article class="item">
-                        <a href="#" class="image fit"><img src='{{ "/img/pic07.jpg" | prepend: site.baseurl }}' alt="" /></a>
-                        <header>
-                            <h3>Orci Convallis</h3>
-                        </header>
-                    </article>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
+    {% endif %}
     <!-- About Me -->
     <section id="about" class="three">
         <div class="container">

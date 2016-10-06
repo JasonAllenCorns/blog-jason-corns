@@ -20,6 +20,8 @@ defaults:
     values:
       author: "jason_corns"
       layout: "default"
+      sidebar: "intro_nav.html"
+      includeIntro: "true"
   -
     scope:
       path: ""
@@ -27,6 +29,8 @@ defaults:
     values:
       author: "jason_corns"
       layout: "post"
+      sidebar: "posts_nav.html"
+      includeIntro: "false"
 
 title: jasoncorns.com
 subtitle: A few words from an avid HTMLer
