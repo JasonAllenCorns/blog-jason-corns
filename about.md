@@ -13,3 +13,6 @@ You can find the source code for the Jekyll new theme at:
 You can find the source code for Jekyll at
 {% include icon-github.html username="jekyll" %} /
 [jekyll](https://github.com/jekyll/jekyll)
+
+
+[scheme](https://coolors.co/888888-404e5c-4f6272-b4b8c5-b7c3f3)
