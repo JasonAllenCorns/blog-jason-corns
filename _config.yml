@@ -1,22 +1,47 @@
-title:            Site Title
-description:      Describe your website here.
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+
+# Assets
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:         ./_sass
+  style:            :compressed
+
+# Site settings
+title: jasoncorns.com
+subtitle: A few words from an avid HTMLer
+email: contact@jasoncorns.com
+description: > # this means to ignore newlines until "baseurl:"
+  Wandering the world of code design and application architecture, absorbing all the Creative opportunities in this
+  wonderful industry of ours.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://jasoncorns.com" # the base hostname & protocol for your site
+timezone: America/Los_Angeles
+future: true
+excerpt_separator: <!--more-->
+# Build settings
+markdown: kramdown
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url:
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Jason Corns
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
+  bio:            "I'm a father, husband, Lego builder, golfer, BBQ enthusiast, Chili lover and legal US Citizen."
   email:          you@email.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
+  twitter:        jasoncorns
   facebook:       
-  github:         
+  github:         JasonAllenCorns
   stackexchange:  
   linkedin:       
   instagram:      
@@ -34,11 +59,9 @@ google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      false  # publish future dated posts --  true, false (default) 
+future:      false  # publish future dated posts --  true, false (default)
 highlighter: rouge
-markdown:    kramdown
+
 gems:
   - jekyll-sitemap
   - jekyll-paginate
