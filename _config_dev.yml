@@ -22,7 +22,7 @@ description: > # this means to ignore newlines until "baseurl:"
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jasoncorns.com" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 timezone: America/Los_Angeles
 future: true
 excerpt_separator: <!--more-->
@@ -37,7 +37,7 @@ owner:
   name:           Jason Corns
   avatar:         1789_10151376948874753_1728718603_n.jpg
   bio:            "I'm a father, husband, Lego builder, golfer, BBQ enthusiast, Chili lover and legal US Citizen."
-  email:          you@email.com
+  email:
   # Social networking links used in footer. Update and remove as you like.
   twitter:        jasoncorns
   facebook:       
