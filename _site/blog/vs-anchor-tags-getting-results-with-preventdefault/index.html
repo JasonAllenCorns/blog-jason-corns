@@ -42,7 +42,6 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
 <!-- Webfonts -->
-<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
 
 <meta http-equiv="cleartype" content="on">
 
@@ -53,7 +52,7 @@
 <!-- 16x16 -->
 <link rel="shortcut icon" href="/favicon.ico">
 <!-- 32x32 -->
-<link rel="shortcut icon" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.ico">
 <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
 <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
 <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
@@ -152,7 +151,7 @@ Reading time ~5 minutes
 
 <p>No magic here.  Two links to two different pages (for simplicity, these are two pages within the same domain).</p>
 
-<p>##The Task</p>
+<h2 id="the-task">The Task</h2>
 
 <p>Our task is to display content from a different page in a modal dialog.  Just to make it more fun, we’ll pull a specific part of the target page in our modal (denoted in each page by a div with ID of “target”).  To add that last little bit of shine to the action, we’ll prevent the URL from changing (more appropriately, we’ll stop any calls to change the <em>window location</em>).</p>
 
@@ -218,11 +217,11 @@ Reading time ~5 minutes
 
 <p>This is the moment we’ve been waiting for.  We have been following happily along wherever the DOM actions will take us but now, we are going to take control of the clicked anchor tag, and force it to do what we want.  Remember, <em>eventMarker</em> is the event argument passed in initially.  Here, we are calling the JavaScript preventDefault method on the event.  Since our event is the result of the click of an anchor, the default action should be to alter the window location.  Instead, we have truncated the event prior to changing the address bar.  As you might imagine, this same method can be used for bookmark links as well – in the end, the preventDefault() method will prevent the hash from being appended to the URL.</p>
 
-<p>###Why <em>preventDefault()</em> instead of return false;?</p>
+<h3 id="why-preventdefault-instead-of-return-false">Why <em>preventDefault()</em> instead of return false;?</h3>
 
 <p>Whenever  you run a return from a JavaScript function, you exit the function – completely preempting any further actions.  With <em>preventDefault()</em>, further processing can be accomplished after the method call, within the same function.  Note that <em>eventMarker.stopPropogation()</em> or <em>eventMarker.cancelBubble=true</em> should be used to completely cancel event bubbling.</p>
 
-<p>###So what?</p>
+<h3 id="so-what">So what?</h3>
 
 <p>Why would the methods in this post be useful?  With this code,  we are unobtrusively adding click event handlers to targeted links, but we are doing so without actually coding “onclick=’…’” or setting href=”javascript:function()”.  If your visitors have <a href="http://www.webdesignerdepot.com/2010/02/how-to-plan-for-the-absence-of-javascript/">JavaScript disabled</a>, then they will get the benefit of linked content.  If JavaScript is enabled, they will get the benefit of dynamic content display, without leaving the page.  <em>Win-win</em>.</p>
 
@@ -245,8 +244,8 @@ Reading time ~5 minutes
       <a href="/blog/accessibility/vs-page-weight-accessibility-part-2/" class="read-more-btn">Read More</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
-      <h3><a href="/blog/vs-apidoc-plugin/" title="How to: apiDoc plugin">How to: apiDoc plugin</a></h3>
-      <p>Documentation is tedious.  It's necessary, but tedious.  When recently tasked with creating a useful, wide-audience documentation site fo...&hellip; <a href="/blog/vs-apidoc-plugin/">Continue reading</a></p>
+      <h3><a href="/blog/how-to-write-apidoc-plugin/" title="How to: apiDoc plugin">How to: apiDoc plugin</a></h3>
+      <p>Documentation is tedious.  It’s necessary, but tedious.  When recently tasked with creating a useful, wide-audience documentation site fo...&hellip; <a href="/blog/how-to-write-apidoc-plugin/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">

@@ -24,7 +24,7 @@ Take the following HTML code for example:
 
 No magic here.  Two links to two different pages (for simplicity, these are two pages within the same domain).
 
-##The Task
+## The Task
 
 Our task is to display content from a different page in a modal dialog.  Just to make it more fun, we’ll pull a specific part of the target page in our modal (denoted in each page by a div with ID of “target”).  To add that last little bit of shine to the action, we’ll prevent the URL from changing (more appropriately, we’ll stop any calls to change the _window location_).
 
@@ -89,10 +89,10 @@ Here, we have separated the _open_ command from the dialog instantiation.  This 
 
 This is the moment we’ve been waiting for.  We have been following happily along wherever the DOM actions will take us but now, we are going to take control of the clicked anchor tag, and force it to do what we want.  Remember, _eventMarker_ is the event argument passed in initially.  Here, we are calling the JavaScript preventDefault method on the event.  Since our event is the result of the click of an anchor, the default action should be to alter the window location.  Instead, we have truncated the event prior to changing the address bar.  As you might imagine, this same method can be used for bookmark links as well – in the end, the preventDefault() method will prevent the hash from being appended to the URL.
 
-###Why _preventDefault()_ instead of return false;?
+### Why _preventDefault()_ instead of return false;?
 
 Whenever  you run a return from a JavaScript function, you exit the function – completely preempting any further actions.  With _preventDefault()_, further processing can be accomplished after the method call, within the same function.  Note that _eventMarker.stopPropogation()_ or _eventMarker.cancelBubble=true_ should be used to completely cancel event bubbling.
 
-###So what?
+### So what?
 
 Why would the methods in this post be useful?  With this code,  we are unobtrusively adding click event handlers to targeted links, but we are doing so without actually coding “onclick=’…’” or setting href=”javascript:function()”.  If your visitors have [JavaScript disabled](http://www.webdesignerdepot.com/2010/02/how-to-plan-for-the-absence-of-javascript/), then they will get the benefit of linked content.  If JavaScript is enabled, they will get the benefit of dynamic content display, without leaving the page.  _Win-win_.

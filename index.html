@@ -36,6 +36,7 @@ image:
   <div class="entry-content">
     {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
   </div><!-- /.entry-content -->
+  <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">Continue reading &raquo;</a>
 </article><!-- /.hentry -->
 {% endfor %}
 
