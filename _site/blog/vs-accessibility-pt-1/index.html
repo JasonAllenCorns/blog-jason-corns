@@ -1,0 +1,205 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Jason vs. Accessibility, pt. 1 &#8211; A few words from an avid HTMLer</title>
+<meta name="description" content="Wandering the world of code design and application architecture, absorbing all the Creative opportunities in this wonderful industry of ours.
+">
+<meta name="keywords" content="WEB-STANDARDS">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="/images/">
+<meta name="twitter:title" content="Jason vs. Accessibility, pt. 1">
+<meta name="twitter:description" content="Wandering the world of code design and application architecture, absorbing all the Creative opportunities in this wonderful industry of ours.
+">
+<meta name="twitter:creator" content="@jasoncorns">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jason vs. Accessibility, pt. 1">
+<meta property="og:description" content="Wandering the world of code design and application architecture, absorbing all the Creative opportunities in this wonderful industry of ours.
+">
+<meta property="og:url" content="/blog/vs-accessibility-pt-1/">
+<meta property="og:site_name" content="A few words from an avid HTMLer">
+
+
+
+
+
+<link rel="canonical" href="/blog/vs-accessibility-pt-1/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="A few words from an avid HTMLer Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+</head>
+
+<body id="post" >
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="/">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="/images/1789_10151376948874753_1728718603_n.jpg" alt="Jason Corns photo" class="author-photo">
+					<h4>Jason Corns</h4>
+					<p>I'm a father, husband, Lego builder, golfer, BBQ enthusiast, Chili lover and legal US Citizen.</p>
+				</li>
+				<li><a href="/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				
+				<li>
+					<a href="https://twitter.com/jasoncorns"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="https://github.com/JasonAllenCorns"><i class="fa fa-fw fa-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="/posts/">All Posts</a></li>
+				<li><a href="/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		
+	    
+	    <li><a href="/theme-setup/" >Theme Setup</a></li>
+	  
+	    
+	    <li><a href="http://mademistakes.com" target="_blank">External Link</a></li>
+	  
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="/blog/vs-accessibility-pt-1/" rel="bookmark" title="Jason vs. Accessibility, pt. 1">Jason vs. Accessibility, pt. 1</a></h1>
+        
+        <h2><span class="entry-date date published"><time datetime="2010-04-13T07:34:01-07:00">April 13, 2010</time></span></h2>
+        
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          
+Reading time ~1 minute
+        </p><!-- /.entry-reading-time -->
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <p>Usability is finally starting to bubble to the top for Web Designers and Information Architects.<!--more-->  We are, as an industry, starting to realize that our audience exists outside of Photoshop canvas and beyond the code.  In fact, I have witnessed an increased focus on <a href="http://en.wikipedia.org/wiki/Unobtrusive_JavaScript">JavaScript degradation</a> over the past few months – an unspoken admission that we, as web design professionals, should and shall provide web content to users of all browsing backgrounds and capabilities.  We have started providing, in earnest, content for the connoisseurs, the design savvy, the critics and the forward thinkers all in tandem with the conservative visitors, the visually impaired, our friends on mobile devices and those that, for whatever reason, just have JavaScript disabled.</p>
+
+<p>Personally, I like movement on a web page.  I like my flyout navigation to have some animation, and my repetitive content divs to mimic an accordion as I expand and collapse each panel; the action is interesting  and it adds to my experience.  In fact, I am disappointed, in most cases, when I find no animation where I expect to find it.  Like many of my contemporaries I am quickly discovering that all those things I enjoy about modern web design are also the things that make a webpage into an accessibility nightmare.  What do I, as a conscientious <a href="http://en.wikipedia.org/wiki/Web_architect">Web Architect</a>, do?  What do I suggest to my clients?  Do I keep my designs and techniques moving forward or do I abandon all the movement and interaction so that the minority of users can browse the web to their own enjoyment?</p>
+
+<p>My answer, flying in the face of the quintessential proclamation about having and eating cake, is simply “do both”.  The analysis phase of every project I accept has increased to allow for accessibility planning.  With so many well-defined best practices for Web Accessibility to be found, the platform for an enjoyable, accessible site is out there; we just have to plan for it.</p>
+
+<p>Throughout this series, I will focus on modern web design trends and how to reconcile these trends with the movement toward, and significant need for, designing websites that are accessible to all audiences.  We may all be surprised as we find a best-of-both-worlds scenario for most design techniques.</p>
+
+<p>I also suggest reading W3C’s Web Accessibility Initiative’s article about <a href="http://www.w3.org/WAI/mobile/">making websites accessible for users with disabilities and for mobile devices</a>.</p>
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="/tags/#WEB-STANDARDS" title="Pages tagged WEB-STANDARDS" class="tag"><span class="term">WEB-STANDARDS</span></a></span>
+        
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/blog/vs-accessibility-pt-1/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/blog/vs-accessibility-pt-1/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=/blog/vs-accessibility-pt-1/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
+</div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    
+    <div class="read-more">
+  
+    <div class="read-more-header">
+      <a href="" class="read-more-btn">Read More</a>
+    </div><!-- /.read-more-header -->
+    <div class="read-more-content">
+      <h3><a href="/blog/vs-apidoc-plugin/" title="How to: apiDoc plugin">How to: apiDoc plugin</a></h3>
+      <p>Documentation is tedious.  It's necessary, but tedious.  When recently tasked with creating a useful, wide-audience documentation site fo...&hellip; <a href="/blog/vs-apidoc-plugin/">Continue reading</a></p>
+    </div><!-- /.read-more-content -->
+  
+  <div class="read-more-list">
+    
+      <div class="list-item">
+        <h4><a href="/blog/versus-css-triangle/" title="Jason vs. the CSS Triangle: Seeing My Own Shadow">Jason vs. the CSS Triangle: Seeing My Own Shadow</a></h4>
+        <span>Published on March 28, 2013</span>
+      </div><!-- /.list-item -->
+    
+      <div class="list-item">
+        <h4><a href="/blog/jealousy-a-quick-look-at-the-Responsive-Redesign-of-the-Boston-Globe/" title="Jason vs. jealousy – a quick look at the Responsive Redesign of the Boston Globe">Jason vs. jealousy – a quick look at the Responsive Redesign of the Boston Globe</a></h4>
+        <span>Published on September 15, 2011</span>
+      </div><!-- /.list-item -->
+    
+  </div><!-- /.read-more-list -->
+</div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2016 Jason Corns. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+
+
+
+	        
+
+</body>
+</html>
