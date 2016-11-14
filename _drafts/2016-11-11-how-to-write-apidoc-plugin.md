@@ -20,14 +20,27 @@ First, an understanding of the apiDoc structure.  The documentation page, at [ht
 
 ## Getting Started
 
-### Assumptions and Understandings
-
+## Assumptions
+These tips assume prior installation of:
+* Node.js v4+ installed
+* npm 2+ (or [Yarn](http://yarnpkg.com), but you'll have to swap commands) installed
+* JavaScript as the language
+* An API ready for documentation
 
 ### Nodejs API
 I will not include instructions for authoring a Node / Express API.  [Chris Sevilleja](https://github.com/sevilayha) has already written a fantastic [API How-To at Scotch.io](https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4), to get you started if you need it.
 
 ### Inclusion in a Project
-
+Once you have a Node.js project to document, include `apiDoc` in your project as a dev-dependency, with ```npm install --save-dev apiDoc```.  This command will install `apiDoc` into _node_modules_, along with its own `apiDoc-core` dependency.  Take a moment to validate the apiDoc installation, and add some documentation lines to any one of the javascript files in the project.
+{% highlight javascript %}
+/**
+ * @api {get} apiDataEndpoint Get data from this endpoint
+ * @apiName getApiData
+ * @apiGroup Site Data
+ * @apiVersion 0.0.1
+ *
+ **/
+{% endhighlight %}
 
 
 ### apidoc-plugin-*
