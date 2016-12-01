@@ -18,7 +18,7 @@ As it turns out, the page weight is a necessary evil for this particular page.  
 
 So what is the ideal solution?  For this client, the massive page was the preferred solution.
 
-Alternatively, we could have used a bit of JQuery magic to deliver a lightweight page, with links to additional content, that was also slick and usable. I cover the details of this option in an upcoming post (Jason vs. Anchor Tags – Getting Results with the PreventDefault method) but the idea is this:
+Alternatively, we could have used a bit of JQuery magic to deliver a lightweight page, with links to additional content, that was also slick and usable. I cover the details of this option in an upcoming post [Jason vs. Anchor Tags – Getting Results with the PreventDefault method]({% post_url 2010-05-13-vs-anchor-tags-getting-results-with-preventdefault %}) but the idea is this:
 
 Provide the user with an appropriate amount of content – an amount that would adequately describe the program- and supply links to the detail pages of each course.  When a visiting user has JavaScript disabled, the content would behave as you might expect: the visitor reads the program description, clicks a link and navigates to a course description page.
 

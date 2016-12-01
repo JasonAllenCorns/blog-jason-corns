@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/blog/how-to-write-apidoc-plugin/</loc>
-<lastmod>2016-09-21T09:54:23-07:00</lastmod>
-</url>
-<url>
-<loc>/blog/versus-css-triangle/</loc>
-<lastmod>2013-03-28T12:14:23-07:00</lastmod>
-</url>
-<url>
 <loc>/blog/jealousy-a-quick-look-at-the-Responsive-Redesign-of-the-Boston-Globe/</loc>
 <lastmod>2011-09-15T13:16:18-07:00</lastmod>
 </url>
