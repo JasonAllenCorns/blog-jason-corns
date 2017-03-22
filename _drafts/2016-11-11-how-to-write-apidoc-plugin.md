@@ -21,7 +21,8 @@ First, an understanding of the apiDoc structure.  The documentation page, at [ht
 ## Getting Started
 
 ## Assumptions
-These tips assume prior installation of:
+These tips assume:
+
 * Node.js v4+ installed
 * npm 2+ (or [Yarn](http://yarnpkg.com), but you'll have to swap commands) installed
 * JavaScript as the language
@@ -41,6 +42,14 @@ Once you have a Node.js project to document, include `apiDoc` in your project as
  *
  **/
 {% endhighlight %}
+
+With `apiDoc` installed locally and the above comment added to a `*.js` file in the project, run the documentation builder to test the install:
+```./node_modules/.bin/apidoc```
+
+**note**: simply running the `apidoc` command will attempt to build documentation for the entire project. If this is an existing project with many files, limit this validation run by limiting source directory(s) with the `-i` flag:
+ ```./node_modules/.bin/apidoc -i ./lib/api```
+ Further control the documentation build by also specifying the output location with the `-o` flag:
+ ```./node_modules/.bin/apidoc -i ./lib/api -o ./apidoc-pages/ -f js```
 
 
 ### apidoc-plugin-*

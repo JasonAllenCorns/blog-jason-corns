@@ -26,7 +26,7 @@ When JavaScript is available, however, we capture the click event of the anchor 
 
 A few things to note -
 
-We did not have to include any onclick property to return false at the click, which helps us maintain our unobtrusive JavaScript.
-Since we would be relying on the anchor’s class when attaching click events, we can flag any anchor to be skipped just by adding another name to a compound class of the anchor OR omitting a target class name.
-Degradation is smooth and predictable, since we’re just talking about anchors with standard href properties.  Without the JavaScript to cause the Modal onclick, the link will fire and redirect the visitor to the uri referenced in the href.
-With the JavaScript in place, we will have taken a very large page and trimmed it down to a manageable size, and successfully merged accessibility with usability.
+ * We did not have to include any onclick property to return false at the click, which helps us maintain our unobtrusive JavaScript.
+ * Since we would be relying on the anchor’s class when attaching click events, we can flag any anchor to be skipped just by adding another name to a compound class of the anchor OR omitting a target class name.
+ * Degradation is smooth and predictable, since we’re just talking about anchors with standard href properties.  Without the JavaScript to cause the Modal onclick, the link will fire and redirect the visitor to the uri referenced in the href.
+ * With the JavaScript in place, we will have taken a very large page and trimmed it down to a manageable size, and successfully merged accessibility with usability.
