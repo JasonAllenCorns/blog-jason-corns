@@ -1,32 +1,69 @@
 ---
 layout: page
-title: About the Jekyll Theme
+title: About Me, Jason Corns
 image:
   feature: abstract-5.jpg
   credit: dargadgetz
   creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 comments: false
-modified: 2016-02-01
+modified: 2017-03-21
 ---
+Like its signature, pervasive mantle of moss, the Pacific Northwest continues to grow on me since I switched coasts in 2011. I find outlet in abundance, codification of all my eclectic interests.  With the singular caveat of "_as long as you don't mind getting wet_", my family and I are now thriving in a community abundant in outdoor adventure, clever vacationers, staunch local-eers, and a comfortingly consistent group of ferry (cyclist) commuters.
 
-They say three times the charm, so here is another free responsive Jekyll blog theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. 
+I enjoy year-round golf with a few foolish friends, and am thrilled by the dynamic backdrops for family-friendly hikes. As a burgeoning PNW Adventurer, I find exactly what I need, in being adventurously close to Snoqualmie Ridge, the Olympic Mountain Range, Port Townsend, and the Pacific Coast.  As a life-long mathematician and software engineer, I have stumbled into a mecca for like-minded individuals who are as passionate about their diverse interests as they about the diversity of their interests - and I love every moment of it.
 
-If you've used any of [my other themes](http://mademistakes.com/work/jekyll-themes/) most of this should be familiar territory...
+<figure>
+  <a href="{{ site.url }}/images/about/dog_chair.jpg" title="I'm just furniture, to the dogs" class="image-popup">
+    <img src="{{ site.url }}/images/about/dog_chair.jpg" alt="I'm just furniture, to the dogs">
+  </a>
+  <figcaption>I sit like this</figcaption>
+</figure>
 
-## HPSTR Features:
+<figure>
+  <a href="{{ site.url }}/images/about/at_the_blue_mermaid.jpg" title="Dinner at the Blue Mermaid in San Francisco" class="image-popup">
+    <img src="{{ site.url }}/images/about/at_the_blue_mermaid.jpg" alt="Dinner at the Blue Mermaid in San Francisco">
+  </a>
+  <figcaption>I ate at this</figcaption>
+</figure>
 
-* Compatible with Jekyll 3 and GitHub Pages.
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Sweet animated menu.
-* Background image support.
-* Support for large images to call out your favorite posts.
-* Optional [Disqus](http://disqus.com) comments.
-* Simple and clear permalink structure[^1].
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* [Custom 404 page]({{ site.url }}/404.html) to get you started.
-* [Syntax highlighting]({{ site.url }}/code-highlighting-post/) stylesheets to make your code examples look snazzy.
+<figure>
+  <a href="{{ site.url }}/images/about/me_and_darth.jpg" title="Darth Vader statue - all LEGO - in LEGOland, CA." class="image-popup">
+    <img src="{{ site.url }}/images/about/me_and_darth.jpg" alt="Darth Vader statue - all LEGO - in LEGOland, CA.">
+  </a>
+  <figcaption>I had to selfie this</figcaption>
+</figure>
 
-<div markdown="0"><a href="{{ site.url }}/theme-setup/" class="btn btn-info">Theme Setup</a> <a href="https://github.com/mmistakes/hpstr-jekyll-theme" class="btn btn-success">Download HPSTR</a></div>
+<figure>
+  <a href="{{ site.url }}/images/about/look_out_crab.jpg" title="I almost stepped on this little rock-dweller!" class="image-popup">
+    <img src="{{ site.url }}/images/about/look_out_crab.jpg" alt="I almost stepped on this little rock-dweller!">
+  </a>
+  <figcaption>I almost stepped on this</figcaption>
+</figure>
 
-[^1]: Example: *domain.com/category-name/post-title*
+<figure>
+  <a href="{{ site.url }}/images/about/what_a_fire_pit.jpg" title="Turning unused backyard into comfortable entertainment." class="image-popup">
+    <img src="{{ site.url }}/images/about/what_a_fire_pit.jpg" alt="Turning unused backyard into comfortable entertainment.">
+  </a>
+  <figcaption>I built this</figcaption>
+</figure>
+
+<figure>
+  <a href="{{ site.url }}/images/about/sundown_san_diego.jpg" title="An amazing sunset over the Pacific - but aren't they all?" class="image-popup">
+    <img src="{{ site.url }}/images/about/sundown_san_diego.jpg" alt="An amazing sunset over the Pacific - but aren't they all?">
+  </a>
+  <figcaption>I was awed by this</figcaption>
+</figure>
+
+<figure>
+  <a href="{{ site.url }}/images/about/hang_in_there_battery.jpg" title="My camera battery died on this series - I wasn't sure I even captured the breach until I charged my battery later!" class="image-popup">
+    <img src="{{ site.url }}/images/about/hang_in_there_battery.jpg" alt="My camera battery died on this series - I wasn't sure I even captured the breach until I charged my battery later!">
+  </a>
+  <figcaption>I almost missed this</figcaption>
+</figure>
+
+<figure>
+  <a href="{{ site.url }}/images/about/snow_finally.jpg" title="Snow, finally, across the sound.  Way to go, 2016." class="image-popup">
+    <img src="{{ site.url }}/images/about/snow_finally.jpg" alt="Snow, finally, across the sound.  Way to go, 2016.">
+  </a>
+  <figcaption>I stayed up late for this</figcaption>
+</figure>
