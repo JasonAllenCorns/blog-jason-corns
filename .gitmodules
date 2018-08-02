@@ -1,6 +1,0 @@
-[submodule "themes/hugo-nederburg-theme"]
-	path = themes/hugo-nederburg-theme
-	url = git@github.com:JasonAllenCorns/hugo-nederburg-theme.git
-[submodule "themes/sam"]
-	path = themes/sam
-	url = https://github.com/vickylai/hugo-theme-sam.git
