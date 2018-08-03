@@ -1,3 +1,74 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl= "http://jasoncorns.com/"
+languagecode= "en-US"
+title= "Jason Corns' blog..."
+#disqusshortname = "YOUR_SHORT_NAME_HERE"
+copyright = "All rights reserved, 2011-2018"
+canonifyurls = true
+
+# site
+theme                   = "hugo-theme-casper"
+# list handling
+paginate                = 5
+pluralizelisttitles     = false
+
+# navigation
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/"
+  weight = 1000
+[[menu.main]]
+  name = "Github repos"
+  pre = "<h3>Follow me</h3>"
+  url = "https://github.com/JasonAllenCorns"
+  weight = 110
+[[menu.main]]
+  name = "Twitter timeline"
+  url = "https://twitter.com/jasoncorns"
+  weight = 105
+
+[params]
+  author                = "Jason Corns"
+  authorlocation        = "Seattle, WA"
+  authorwebsite         = "http://about.me/jasoncorns"
+  description           = "A few words from an avid HTMLer"
+  metadescription       = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
+  authorbio             = "<table border='0' cellpadding='0' cellspacing='0'><tbody><tr><td align='left' valign='bottom' width='107' style='line-height:0;vertical-align:bottom;padding-right:10px;padding-top:20px;padding-bottom:20px;'><a href='https://about.me/jasoncorns?promo=email_sig&amp;utm_source=product&amp;utm_medium=email_sig&amp;utm_campaign=edit_panel&amp;utm_content=thumb' style='text-decoration:none;'><img src='https://thumbs.about.me/thumbnail/users/j/a/s/jasoncorns_emailsig.jpg?_1523901236_916' alt='' width='105' height='70' style='margin:0;padding:0;display:block;border:1px solid #eeeeee;'></a></td><td align='left' valign='bottom' style='line-height:1.1;vertical-align:bottom;padding-top:20px;padding-bottom:20px;'><img src='https://about.me/t/sig?u=jasoncorns' width='1' height='1' style='border:0;margin:0;padding:0;width:1;height:1;overflow:hidden;'><div style='font-size:18px;font-weight:bold;color:#333333;font-family:'Proxima Nova',Helvetica,Arial,sans-serif !important;'>Jason Corns</div><a href='https://about.me/jasoncorns?promo=email_sig&amp;utm_source=product&amp;utm_medium=email_sig&amp;utm_campaign=edit_panel&amp;utm_content=thumb' style='text-decoration:none;font-size:12px;color:#2b82ad;font-family:'Proxima Nova',Helvetica,Arial,sans-serif !important;'>about.me/jasoncorns</a></td></tr></tbody></table>"
+  cover                 = "images/cover.png"
+  logo                  = "images/coffee-logo.png"
+  googleAnalyticsUserID = "UA-"
+
+
+  # Optional RSS-Link, if not provided it defaults to the standard index.xml
+  RSSLink = "http://feeds.feedburner.com/..."
+  githubName = "JasonAllenCorns"
+  twitterName = "jasoncorns"
+  aboutmeName = "jasoncorns"
+  # facebookName = ""
+  # codepenName = ""
+  # linkedinName = ""
+  # stackoverflowId = ""
+  # keybaseName = ""
+  # flickrName = ""
+  # instagramName = ""
+  # email = ""
+  # pinterestName = ""
+  # googlePlusName = ""
+  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+  hideHUGOSupport = false
+
+  # Setting a value will load highlight.js and enable syntax highlighting using the style selected.
+  # See https://github.com/isagalaev/highlight.js/tree/master/src/styles for available styles
+  # A preview of above styles can be viewed at https://highlightjs.org/static/demo/
+  hjsStyle = "default"
+
+  [params.social]
+    twitter = "jasoncorns"
+
+[permalinks]
+  post = "/:slug/"
+
+[sitemap]
+  ChangeFreq = ""
+  Filename = "sitemap.xml"
+  Priority = "-1"

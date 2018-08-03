@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://jasoncorns.com/semantic-css-visual-outline/</loc>
+    <lastmod>2018-08-02T21:29:43-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jasoncorns.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jasoncorns.com/tags/code-sample/</loc>
+    <lastmod>2018-08-02T21:29:43-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jasoncorns.com/tags/coding/</loc>
+    <lastmod>2018-08-02T21:29:43-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jasoncorns.com/tags/css/</loc>
+    <lastmod>2018-08-02T21:29:43-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jasoncorns.com/</loc>
+    <lastmod>2018-08-02T21:29:43-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jasoncorns.com/tags/oocss/</loc>
+    <lastmod>2018-08-02T21:29:43-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jasoncorns.com/post/</loc>
+    <lastmod>2018-08-02T21:29:43-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jasoncorns.com/tags/</loc>
+    <lastmod>2018-08-02T21:29:43-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jasoncorns.com/tags/tips/</loc>
+    <lastmod>2018-08-02T21:29:43-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
