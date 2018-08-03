@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="/images/posts/features/abstract-curves-led-1944.jpg"/>
+    
+
+
+
+<meta name="twitter:title" content="Semantic Css Establishing a Visual Outline"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@jasoncorns"/>
+
+
+
+  	<meta property="og:title" content="Semantic Css Establishing a Visual Outline &middot; Jason Corns&#39; blog..." />
+  	<meta property="og:site_name" content="Jason Corns&#39; blog..." />
+  	<meta property="og:url" content="http://jasoncorns.com/semantic-css-visual-outline/" />
+
+    
+       <meta property="og:image" content="/images/posts/features/abstract-curves-led-1944.jpg"/>
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2010-08-16T20:08:33-08:00" />
+
+    
+    <meta property="article:tag" content="css" />
+    
+    <meta property="article:tag" content="coding" />
+    
+    <meta property="article:tag" content="OOCSS" />
+    
+    <meta property="article:tag" content="code-sample" />
+    
+    <meta property="article:tag" content="tips" />
+    
+    
+
+    <title>Semantic Css Establishing a Visual Outline &middot; Jason Corns&#39; blog...</title>
+
+    
+    <meta name="description" content="Let&amp;rsquo;s move beyond simply linting our code, and delve into creating a visual outline of our CSS. Anyone who writes code, anything from simple UI shifts thr" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://jasoncorns.com/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://jasoncorns.com/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://jasoncorns.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://jasoncorns.com/css/nav.css" />
+
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+        
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+        <link href="http://feeds.feedburner.com/..." rel="alternate" type="application/rss+xml" title="Jason Corns&#39; blog..." />
+    
+    <meta name="generator" content="Hugo 0.45.1" />
+
+    <link rel="canonical" href="http://jasoncorns.com/semantic-css-visual-outline/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": http://jasoncorns.com/images/coffee-logo.png
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": http://jasoncorns.com/images/coffee-logo.png,
+            "width": 250,
+            "height": 250
+        },
+        
+        "url": http://about.me/jasoncorns,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ],
+        "description": &lt;table border=&#39;0&#39; cellpadding=&#39;0&#39; cellspacing=&#39;0&#39;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&#39;left&#39; valign=&#39;bottom&#39; width=&#39;107&#39; style=&#39;line-height:0;vertical-align:bottom;padding-right:10px;padding-top:20px;padding-bottom:20px;&#39;&gt;&lt;a href=&#39;https://about.me/jasoncorns?promo=email_sig&amp;amp;utm_source=product&amp;amp;utm_medium=email_sig&amp;amp;utm_campaign=edit_panel&amp;amp;utm_content=thumb&#39; style=&#39;text-decoration:none;&#39;&gt;&lt;img src=&#39;https://thumbs.about.me/thumbnail/users/j/a/s/jasoncorns_emailsig.jpg?_1523901236_916&#39; alt=&#39;&#39; width=&#39;105&#39; height=&#39;70&#39; style=&#39;margin:0;padding:0;display:block;border:1px solid #eeeeee;&#39;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td align=&#39;left&#39; valign=&#39;bottom&#39; style=&#39;line-height:1.1;vertical-align:bottom;padding-top:20px;padding-bottom:20px;&#39;&gt;&lt;img src=&#39;https://about.me/t/sig?u=jasoncorns&#39; width=&#39;1&#39; height=&#39;1&#39; style=&#39;border:0;margin:0;padding:0;width:1;height:1;overflow:hidden;&#39;&gt;&lt;div style=&#39;font-size:18px;font-weight:bold;color:#333333;font-family:&#39;Proxima Nova&#39;,Helvetica,Arial,sans-serif !important;&#39;&gt;Jason Corns&lt;/div&gt;&lt;a href=&#39;https://about.me/jasoncorns?promo=email_sig&amp;amp;utm_source=product&amp;amp;utm_medium=email_sig&amp;amp;utm_campaign=edit_panel&amp;amp;utm_content=thumb&#39; style=&#39;text-decoration:none;font-size:12px;color:#2b82ad;font-family:&#39;Proxima Nova&#39;,Helvetica,Arial,sans-serif !important;&#39;&gt;about.me/jasoncorns&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+        
+    },
+    "headline": Semantic Css Establishing a Visual Outline,
+    "name": Semantic Css Establishing a Visual Outline,
+    "wordCount": 526,
+    "timeRequired": "PT3M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": http://jasoncorns.com/semantic-css-visual-outline/,
+    "datePublished": 2010-08-16T20:08Z,
+    "dateModified": 2018-08-02T21:29Z,
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": http://jasoncorns.com/images/posts/features/abstract-curves-led-1944.jpg,
+        "width": 3000,
+        "height": 1445
+    },
+    
+    "keywords": css, coding, OOCSS, code-sample, tips,
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": http://jasoncorns.com/semantic-css-visual-outline/
+    }
+}
+    </script>
+    
+
+    
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://jasoncorns.com/">Blog</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/JasonAllenCorns">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/jasoncorns">Twitter timeline</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="http://feeds.feedburner.com/...">Subscribe</a> </div>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+  
+  <header class="main-header post-head" style="background-image: url(/images/posts/features/abstract-curves-led-1944.jpg)">
+  
+  <nav class="main-nav overlay clearfix">
+
+
+  
+      <a class="blog-logo" href="http://jasoncorns.com/"><img src="http://jasoncorns.com/images/coffee-logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Semantic Css Establishing a Visual Outline</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2010-08-16T20:08:33-08:00">
+            Aug 16, 2010
+          </time>
+        
+        
+          <span class="post-tag small"><a href="http://jasoncorns.com//tags/css/">#css</a></span>
+        
+          <span class="post-tag small"><a href="http://jasoncorns.com//tags/coding/">#coding</a></span>
+        
+          <span class="post-tag small"><a href="http://jasoncorns.com//tags/oocss/">#OOCSS</a></span>
+        
+          <span class="post-tag small"><a href="http://jasoncorns.com//tags/code-sample/">#code-sample</a></span>
+        
+          <span class="post-tag small"><a href="http://jasoncorns.com//tags/tips/">#tips</a></span>
+        
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>Let&rsquo;s move beyond simply linting our code, and delve into creating a visual outline of our CSS.  Anyone who writes code, anything from simple UI shifts through complex exotic joins, inherits a responsibility to write reasonable code.  Good code solves a problem or answers a question; well-written code lives on, open and accessible to future developers.</p>
+
+<p>Before we begin, let me say that the delivered stylesheet should be minified and free of excess spaces, tabs, semicolons and lengths of 0px instead of “0″, using tools like the <a href="http://developer.yahoo.com/yui/compressor/">YUI compressor</a> or the <a href="http://www.cssdrive.com/index.php/main/csscompressor/">CSS Drive Online CSS Compression Utility</a>.</p>
+
+<p>I have read and been part of many discussions about the <a href="http://stackoverflow.com/questions/72911/whats-the-best-way-to-organize-css-rules">format of a CSS document</a>.  I happen to prefer to keep my declarations line-separated, alphabetized within contextually appropriate groups.  I also like to keep the entire ruleset on one line, unless the ruleset is too long (I know, that’s subjective, but it is my blog).</p>
+
+<p>Recently, though, I’ve had to work on some interesting and complex designs.  As the DOM depth grew, I found myself getting lost in my own HTML.  The solution, for me, was a simple one, both easy to implement and easy to back out of (especially when using the tools listed above).</p>
+
+<p>My CSS formatting rules were category based:</p>
+
+<ol>
+<li><a href="http://developer.yahoo.com/yui/reset/">Reset CSS</a>, if necessary/desired (note, I don’t always use a full reset library)</li>
+<li>HTML declarations</li>
+<li>ID rules</li>
+<li>class rules</li>
+</ol>
+
+<p>Beyond that, I found my formatting rules lacking.  Last-in mental flow within category left me lost and confused.  To buttress my existing formatting rules, I adopted a visual outline in my stylesheet that matched the indent rules of my HTML.  For example, the following HTML:</p>
+
+<pre><code class="language-html">&lt;div id=&quot;nav&quot;&gt;
+   &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;some local navigation link&quot;&gt;Navigation Item 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;some local navigation link&quot;&gt;Navigation Item 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;some local navigation link&quot;&gt;Navigation Item 3&lt;/a&gt;
+         &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;some local navigation link&quot;&gt;Sub-Navigation Item 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;some local navigation link&quot;&gt;Sub-Navigation Item 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;some local navigation link&quot;&gt;Sub-Navigation Item 3&lt;/a&gt;
+         &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;some local navigation link&quot;&gt;Navigation Item 4&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;some local navigation link&quot;&gt;Navigation Item 5&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;some local navigation link&quot;&gt;Navigation Item 6&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Would be supported by this CSS:</p>
+
+<pre><code class="language-css">#nav {border:1px solid #ccc;}
+	#nav ul {list-style-type:none;margin:0;padding:0;}
+		#nav ul li {display:inline;list-style-type:none;margin:0;padding:0;}
+		#nav ul li:hover {position:relative;}
+			#nav ul li a {display:inline-block;color:#000;padding:4px 12px;text-decoration:none;}
+			#nav ul li a:hover {text-decoration:underline;}
+			#nav ul li ul {background-color:#666666;border:1px solid #333333;display:none;position:absolute;left:5px;top:100%;width:200px;}
+			#nav ul li ul li {display:block;width:200px;}
+			#nav ul li:hover ul {display:block;}
+			#nav ul li ul li a {color:#fff;}
+</code></pre>
+
+<p>There’s nothing new or magical here. In fact, this isn’t even a very pretty implementation of a flyout menu. The point here, though, is that my CSS has been formatted to mimic the indentation and format of the HTML.  Clearly, “li” is a child of “ul” is a child of “#nav” and so on.  As your style sheet grows, you’ll be glad you took the extra steps to maintain a mock of your HTML formatting.</p>
+
+<p>Don’t forget – the final step before publishing to production should, at the very least, be minification!</p>
+
+<p>Bonus content: this concept can be rewritten to use Object Oriented CSS (<a href="http://github.com/stubbornella/oocss/wiki">stubbornella@github</a> and <a href="http://oocss.org/">object-oriented CSS</a>).  Check back later for that post!</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="http://jasoncorns.com/" style="background-image: url(/images/coffee-logo.png)"><span class="hidden">Jason Corns's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="http://jasoncorns.com/">Jason Corns</a></h4>
+  
+  <p><table border='0' cellpadding='0' cellspacing='0'><tbody><tr><td align='left' valign='bottom' width='107' style='line-height:0;vertical-align:bottom;padding-right:10px;padding-top:20px;padding-bottom:20px;'><a href='https://about.me/jasoncorns?promo=email_sig&amp;utm_source=product&amp;utm_medium=email_sig&amp;utm_campaign=edit_panel&amp;utm_content=thumb' style='text-decoration:none;'><img src='https://thumbs.about.me/thumbnail/users/j/a/s/jasoncorns_emailsig.jpg?_1523901236_916' alt='' width='105' height='70' style='margin:0;padding:0;display:block;border:1px solid #eeeeee;'></a></td><td align='left' valign='bottom' style='line-height:1.1;vertical-align:bottom;padding-top:20px;padding-bottom:20px;'><img src='https://about.me/t/sig?u=jasoncorns' width='1' height='1' style='border:0;margin:0;padding:0;width:1;height:1;overflow:hidden;'><div style='font-size:18px;font-weight:bold;color:#333333;font-family:'Proxima Nova',Helvetica,Arial,sans-serif !important;'>Jason Corns</div><a href='https://about.me/jasoncorns?promo=email_sig&amp;utm_source=product&amp;utm_medium=email_sig&amp;utm_campaign=edit_panel&amp;utm_content=thumb' style='text-decoration:none;font-size:12px;color:#2b82ad;font-family:'Proxima Nova',Helvetica,Arial,sans-serif !important;'>about.me/jasoncorns</a></td></tr></tbody></table></p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Seattle, WA</span>
+    <span class="author-link icon-link"><a href="http://about.me/jasoncorns">http://about.me/jasoncorns</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Semantic%20Css%20Establishing%20a%20Visual%20Outline&nbsp;-&nbsp;Jason%20Corns%27%20blog...&amp;url=http%3a%2f%2fjasoncorns.com%2fsemantic-css-visual-outline%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fjasoncorns.com%2fsemantic-css-visual-outline%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Jason Corns&#39; blog...</a> All rights reserved, 2011-2018</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://jasoncorns.com/js/jquery.js"></script>
+    <script type="text/javascript" src="http://jasoncorns.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://jasoncorns.com/js/index.js"></script>
+    
+</body>
+</html>
+

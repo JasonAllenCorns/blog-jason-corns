@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Jason Corns&#39; blog...</title>
+    <link>http://jasoncorns.com/tags/</link>
+    <description>Recent content in Tags on Jason Corns&#39; blog...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>All rights reserved, 2011-2018</copyright>
+    <lastBuildDate>Thu, 02 Aug 2018 21:29:43 -0700</lastBuildDate>
+    
+	<atom:link href="http://jasoncorns.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Code Sample</title>
+      <link>http://jasoncorns.com/tags/code-sample/</link>
+      <pubDate>Thu, 02 Aug 2018 21:29:43 -0700</pubDate>
+      
+      <guid>http://jasoncorns.com/tags/code-sample/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coding</title>
+      <link>http://jasoncorns.com/tags/coding/</link>
+      <pubDate>Thu, 02 Aug 2018 21:29:43 -0700</pubDate>
+      
+      <guid>http://jasoncorns.com/tags/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Css</title>
+      <link>http://jasoncorns.com/tags/css/</link>
+      <pubDate>Thu, 02 Aug 2018 21:29:43 -0700</pubDate>
+      
+      <guid>http://jasoncorns.com/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oocss</title>
+      <link>http://jasoncorns.com/tags/oocss/</link>
+      <pubDate>Thu, 02 Aug 2018 21:29:43 -0700</pubDate>
+      
+      <guid>http://jasoncorns.com/tags/oocss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tips</title>
+      <link>http://jasoncorns.com/tags/tips/</link>
+      <pubDate>Thu, 02 Aug 2018 21:29:43 -0700</pubDate>
+      
+      <guid>http://jasoncorns.com/tags/tips/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
