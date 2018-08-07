@@ -1,31 +1,31 @@
-baseurl= "http://jasoncorns.com/"
-languagecode= "en-US"
-title= "Jason Corns' blog..."
+baseurl                     = "http://www.jasoncorns.com/"
+languagecode                = "en-US"
+title                       = "Jason Corns' blog..."
 #disqusshortname = "YOUR_SHORT_NAME_HERE"
-copyright = "All rights reserved, 2011-2018"
-canonifyurls = true
+copyright                   = "All rights reserved, 2011-2018"
+canonifyurls                = true
 
 # site
-theme                   = "hugo-theme-casper"
+theme                       = "hugo-theme-casper"
 # list handling
-paginate                = 5
-pluralizelisttitles     = false
+paginate                    = 5
+pluralizelisttitles         = false
 
 # navigation
 [[menu.main]]
-  identifier = "blog"
-  name = "Blog"
-  url = "/"
-  weight = 1000
+  identifier                = "blog"
+  name                      = "Blog"
+  url                       = "/"
+  weight                    = 1000
 [[menu.main]]
-  name = "Github repos"
-  pre = "<h3>Follow me</h3>"
-  url = "https://github.com/JasonAllenCorns"
+  name                      = "Github repos"
+  pre                       = "<h3>Follow me</h3>"
+  url                       = "https://github.com/JasonAllenCorns"
   weight = 110
 [[menu.main]]
-  name = "Twitter timeline"
-  url = "https://twitter.com/jasoncorns"
-  weight = 105
+  name                      = "Twitter timeline"
+  url                       = "https://twitter.com/jasoncorns"
+  weight                    = 105
 
 [params]
   author                    = "Jason Corns"
@@ -41,10 +41,10 @@ pluralizelisttitles     = false
 
 
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
-  RSSLink = "http://feeds.feedburner.com/..."
-  githubName = "JasonAllenCorns"
-  twitterName = "jasoncorns"
-  aboutmeName = "jasoncorns"
+  RSSLink                   = "http://feeds.feedburner.com/..."
+  githubName                = "JasonAllenCorns"
+  twitterName               = "jasoncorns"
+  aboutmeName               = "jasoncorns"
   # facebookName = ""
   # codepenName = ""
   # linkedinName = ""
@@ -56,20 +56,20 @@ pluralizelisttitles     = false
   # pinterestName = ""
   # googlePlusName = ""
   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
-  hideHUGOSupport = false
+  hideHUGOSupport           = false
 
   # Setting a value will load highlight.js and enable syntax highlighting using the style selected.
   # See https://github.com/isagalaev/highlight.js/tree/master/src/styles for available styles
   # A preview of above styles can be viewed at https://highlightjs.org/static/demo/
-  hjsStyle = "default"
+  hjsStyle                  = "default"
 
   [params.social]
-    twitter = "jasoncorns"
+    twitter                 = "jasoncorns"
 
 [permalinks]
-  post = "/:slug/"
+  post                      = "/:year/:month/:slug"
 
 [sitemap]
-  ChangeFreq = ""
-  Filename = "sitemap.xml"
-  Priority = "-1"
+  ChangeFreq                = ""
+  Filename                  = "sitemap.xml"
+  Priority                  = "-1"
