@@ -2,58 +2,112 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jason Corns&#39; blog...</title>
-    <link>http://jasoncorns.com/tags/</link>
+    <link>http://www.jasoncorns.com/tags/</link>
     <description>Recent content in Tags on Jason Corns&#39; blog...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved, 2011-2018</copyright>
-    <lastBuildDate>Thu, 02 Aug 2018 21:29:43 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 13 Apr 2010 20:21:11 -0800</lastBuildDate>
     
-	<atom:link href="http://jasoncorns.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.jasoncorns.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Code Sample</title>
-      <link>http://jasoncorns.com/tags/code-sample/</link>
-      <pubDate>Thu, 02 Aug 2018 21:29:43 -0700</pubDate>
+      <title>Accessibility</title>
+      <link>http://www.jasoncorns.com/tags/accessibility/</link>
+      <pubDate>Tue, 13 Apr 2010 20:21:11 -0800</pubDate>
       
-      <guid>http://jasoncorns.com/tags/code-sample/</guid>
+      <guid>http://www.jasoncorns.com/tags/accessibility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ajax</title>
+      <link>http://www.jasoncorns.com/tags/ajax/</link>
+      <pubDate>Thu, 13 May 2010 18:22:49 -0800</pubDate>
+      
+      <guid>http://www.jasoncorns.com/tags/ajax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code Sample</title>
+      <link>http://www.jasoncorns.com/tags/code-sample/</link>
+      <pubDate>Mon, 16 Aug 2010 20:08:33 -0800</pubDate>
+      
+      <guid>http://www.jasoncorns.com/tags/code-sample/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Coding</title>
-      <link>http://jasoncorns.com/tags/coding/</link>
-      <pubDate>Thu, 02 Aug 2018 21:29:43 -0700</pubDate>
+      <link>http://www.jasoncorns.com/tags/coding/</link>
+      <pubDate>Mon, 16 Aug 2010 20:08:33 -0800</pubDate>
       
-      <guid>http://jasoncorns.com/tags/coding/</guid>
+      <guid>http://www.jasoncorns.com/tags/coding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Css</title>
-      <link>http://jasoncorns.com/tags/css/</link>
-      <pubDate>Thu, 02 Aug 2018 21:29:43 -0700</pubDate>
+      <link>http://www.jasoncorns.com/tags/css/</link>
+      <pubDate>Mon, 16 Aug 2010 20:08:33 -0800</pubDate>
       
-      <guid>http://jasoncorns.com/tags/css/</guid>
+      <guid>http://www.jasoncorns.com/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>http://www.jasoncorns.com/tags/javascript/</link>
+      <pubDate>Thu, 13 May 2010 18:22:49 -0800</pubDate>
+      
+      <guid>http://www.jasoncorns.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jquery</title>
+      <link>http://www.jasoncorns.com/tags/jquery/</link>
+      <pubDate>Thu, 13 May 2010 18:22:49 -0800</pubDate>
+      
+      <guid>http://www.jasoncorns.com/tags/jquery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Oocss</title>
-      <link>http://jasoncorns.com/tags/oocss/</link>
-      <pubDate>Thu, 02 Aug 2018 21:29:43 -0700</pubDate>
+      <link>http://www.jasoncorns.com/tags/oocss/</link>
+      <pubDate>Mon, 16 Aug 2010 20:08:33 -0800</pubDate>
       
-      <guid>http://jasoncorns.com/tags/oocss/</guid>
+      <guid>http://www.jasoncorns.com/tags/oocss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Preventdefault</title>
+      <link>http://www.jasoncorns.com/tags/preventdefault/</link>
+      <pubDate>Thu, 13 May 2010 18:22:49 -0800</pubDate>
+      
+      <guid>http://www.jasoncorns.com/tags/preventdefault/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tips</title>
-      <link>http://jasoncorns.com/tags/tips/</link>
-      <pubDate>Thu, 02 Aug 2018 21:29:43 -0700</pubDate>
+      <link>http://www.jasoncorns.com/tags/tips/</link>
+      <pubDate>Mon, 16 Aug 2010 20:08:33 -0800</pubDate>
       
-      <guid>http://jasoncorns.com/tags/tips/</guid>
+      <guid>http://www.jasoncorns.com/tags/tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Standards</title>
+      <link>http://www.jasoncorns.com/tags/web-standards/</link>
+      <pubDate>Mon, 26 Apr 2010 16:43:23 -0800</pubDate>
+      
+      <guid>http://www.jasoncorns.com/tags/web-standards/</guid>
       <description></description>
     </item>
     

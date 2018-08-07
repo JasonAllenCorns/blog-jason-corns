@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="/images/posts/features/device-blur-branding.jpg"/>
+    
+
+
+
+<meta name="twitter:title" content="Jason vs. Anchor Tags – Getting Results with the preventDefault method"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@jasoncorns"/>
+
+
+
+  	<meta property="og:title" content="Jason vs. Anchor Tags – Getting Results with the preventDefault method &middot; Jason Corns&#39; blog..." />
+  	<meta property="og:site_name" content="Jason Corns&#39; blog..." />
+  	<meta property="og:url" content="http://www.jasoncorns.com/2010/05/jason-vs.-anchor-tags--getting-results-with-the-preventdefault-method/" />
+
+    
+       <meta property="og:image" content="/images/posts/features/device-blur-branding.jpg"/>
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2010-05-13T18:22:49-08:00" />
+
+    
+    <meta property="article:tag" content="ajax" />
+    
+    <meta property="article:tag" content="javascript" />
+    
+    <meta property="article:tag" content="jquery" />
+    
+    <meta property="article:tag" content="preventDefault" />
+    
+    <meta property="article:tag" content="code-sample" />
+    
+    
+
+    <title>Jason vs. Anchor Tags – Getting Results with the preventDefault method &middot; Jason Corns&#39; blog...</title>
+
+    
+    <meta name="description" content="In another post, Jason vs. Page Weight – Accessibility Series, pt. 2, I talked about a solving page weight problem I had with a client. In the end, the client d" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://www.jasoncorns.com/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://www.jasoncorns.com/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://www.jasoncorns.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://www.jasoncorns.com/css/nav.css" />
+
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+        
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+        <link href="http://feeds.feedburner.com/..." rel="alternate" type="application/rss+xml" title="Jason Corns&#39; blog..." />
+    
+    <meta name="generator" content="Hugo 0.45.1" />
+
+    <link rel="canonical" href="http://www.jasoncorns.com/2010/05/jason-vs.-anchor-tags--getting-results-with-the-preventdefault-method/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": http://www.jasoncorns.com/images/coffee-logo.png
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": http://www.jasoncorns.com/images/coffee-logo.png,
+            "width": 250,
+            "height": 250
+        },
+        
+        "url": http://about.me/jasoncorns,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ],
+        "description": &lt;table border=&#39;0&#39; cellpadding=&#39;0&#39; cellspacing=&#39;0&#39;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&#39;left&#39; valign=&#39;bottom&#39; width=&#39;107&#39; style=&#39;line-height:0;vertical-align:bottom;padding-right:10px;padding-top:20px;padding-bottom:20px;&#39;&gt;&lt;a href=&#39;https://about.me/jasoncorns?promo=email_sig&amp;amp;utm_source=product&amp;amp;utm_medium=email_sig&amp;amp;utm_campaign=edit_panel&amp;amp;utm_content=thumb&#39; style=&#39;text-decoration:none;&#39;&gt;&lt;img src=&#39;https://thumbs.about.me/thumbnail/users/j/a/s/jasoncorns_emailsig.jpg?_1523901236_916&#39; alt=&#39;&#39; width=&#39;105&#39; height=&#39;70&#39; style=&#39;margin:0;padding:0;display:block;border:1px solid #eeeeee;&#39;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td align=&#39;left&#39; valign=&#39;bottom&#39; style=&#39;line-height:1.1;vertical-align:bottom;padding-top:20px;padding-bottom:20px;&#39;&gt;&lt;img src=&#39;https://about.me/t/sig?u=jasoncorns&#39; width=&#39;1&#39; height=&#39;1&#39; style=&#39;border:0;margin:0;padding:0;width:1;height:1;overflow:hidden;&#39;&gt;&lt;div style=&#39;font-size:18px;font-weight:bold;color:#333333;font-family:&#39;Proxima Nova&#39;,Helvetica,Arial,sans-serif !important;&#39;&gt;Jason Corns&lt;/div&gt;&lt;a href=&#39;https://about.me/jasoncorns?promo=email_sig&amp;amp;utm_source=product&amp;amp;utm_medium=email_sig&amp;amp;utm_campaign=edit_panel&amp;amp;utm_content=thumb&#39; style=&#39;text-decoration:none;font-size:12px;color:#2b82ad;font-family:&#39;Proxima Nova&#39;,Helvetica,Arial,sans-serif !important;&#39;&gt;about.me/jasoncorns&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+        
+    },
+    "headline": Jason vs. Anchor Tags – Getting Results with the preventDefault method,
+    "name": Jason vs. Anchor Tags – Getting Results with the preventDefault method,
+    "wordCount": 1015,
+    "timeRequired": "PT5M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": http://www.jasoncorns.com/2010/05/jason-vs.-anchor-tags--getting-results-with-the-preventdefault-method/,
+    "datePublished": 2010-05-13T18:22Z,
+    "dateModified": 2010-05-13T18:22Z,
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": http://www.jasoncorns.com/images/posts/features/device-blur-branding.jpg,
+        "width": 3000,
+        "height": 1445
+    },
+    
+    "keywords": ajax, javascript, jquery, preventDefault, code-sample,
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": http://www.jasoncorns.com/2010/05/jason-vs.-anchor-tags--getting-results-with-the-preventdefault-method/
+    }
+}
+    </script>
+    
+
+    
+
+    
+      <meta name="google-site-verification" content="Hgqv8JoJl2N1QEH_NqwD2B40x8on4kQpS0e_2pYDBto" />
+    
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://www.jasoncorns.com/">Blog</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/JasonAllenCorns">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/jasoncorns">Twitter timeline</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="http://feeds.feedburner.com/...">Subscribe</a> </div>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+  
+  <header class="main-header post-head" style="background-image: url(/images/posts/features/device-blur-branding.jpg)">
+  
+  <nav class="main-nav overlay clearfix">
+
+
+  
+      <a class="blog-logo" href="http://www.jasoncorns.com/"><img src="http://www.jasoncorns.com/images/coffee-logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Jason vs. Anchor Tags – Getting Results with the preventDefault method</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2010-05-13T18:22:49-08:00">
+            May 13, 2010
+          </time>
+        
+        
+          <span class="post-tag small"><a href="http://www.jasoncorns.com//tags/ajax/">#ajax</a></span>
+        
+          <span class="post-tag small"><a href="http://www.jasoncorns.com//tags/javascript/">#javascript</a></span>
+        
+          <span class="post-tag small"><a href="http://www.jasoncorns.com//tags/jquery/">#jquery</a></span>
+        
+          <span class="post-tag small"><a href="http://www.jasoncorns.com//tags/preventdefault/">#preventDefault</a></span>
+        
+          <span class="post-tag small"><a href="http://www.jasoncorns.com//tags/code-sample/">#code-sample</a></span>
+        
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>In another post, <a href="http://www.jasoncorns.com/2010/04/page-weight-accessibility-part-2/">Jason vs. Page Weight – Accessibility Series, pt. 2</a>, I talked about a solving page weight problem I had with a client.  In the end, the client decided to put a lot of data on a single page.  In my opinion, this would have been a great time to use AJAX to pull in the data rather than just pushing it all to the page at load.  The problem with AJAX is that it relies on JavaScript (reliance may, in fact, be too weak a term, honestly) and so would not have been ideal for search engines and would not have provided accessible page content.  We could fix that by linking to pages with additional content, but we really want to use AJAX to show the data on a single page for all visitors with JavaScript enabled.  So, we just do both.</p>
+
+<p>By leveraging the <a href="http://api.jquery.com/category/events/event-object/#post-201">preventDefault method</a> available in the jQuery library (this is actually a JavaScript call, and exists outside of jQuery.  See the <a href="http://www.w3.org/TR/2001/WD-DOM-Level-3-Events-20010823/events.html#Events-Event-preventDefault">W3C write up</a>.) we can provide a page that is static, accessible HTML content by default, but picks up some dynamic interest at page load.  Note: some of the following examples presuppose a single domain; using AJAX to load content from other pages can easily get into <a href="http://en.wikipedia.org/wiki/Cross-site_scripting">cross-site scripting</a> issues.  If you control the server being accessed, you can manage the cross-origin request permissions by setting the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS">HTTP access control</a>.</p>
+
+<p>Take the following HTML code for example:</p>
+
+<pre><code class="language-html">&lt;div class=&quot;targetLinks&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;somepage.html&quot;&gt;Some Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;anotherpage.html&quot;&gt;Another Page&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>No magic here.  Two links to two different pages (for simplicity, these are two pages within the same domain).</p>
+
+<h2 id="the-task">The Task</h2>
+
+<p>Our task is to display content from a different page in a modal dialog.  Just to make it more fun, we’ll pull a specific part of the target page in our modal (denoted in each page by a div with ID of “target”).  To add that last little bit of shine to the action, we’ll prevent the URL from changing (more appropriately, we’ll stop any calls to change the <em>window location</em>).</p>
+
+<p>We’ll need three things for this tutorial:</p>
+
+<ul>
+<li><a href="http://jquery.com">jQuery</a></li>
+<li><a href="https://jqueryui.com/">jQueryUI</a> - <em>core</em> plus <em>dialog</em> will do (for a simple Modal)</li>
+</ul>
+
+<p>Let’s take a look at the code required to attain our goal, then we’ll break it down piece by piece.</p>
+
+<pre><code class="language-javascript">$(document).ready(function() {
+	$('.targetLinks').find('ul li a').on('click', function(eventMarker) {
+		var $dialog = $('&lt;div&gt;&lt;/div&gt;')
+			.load($(this).attr('href') + &quot; #target&quot;)
+			.dialog({
+				autoOpen: false,
+				modal:true,
+				title: $(this).attr('title'),
+				width: 500,
+				height: 300
+			});
+		$dialog.dialog('open');
+		eventMarker.preventDefault();
+	});
+});
+</code></pre>
+
+<p>If you’ve seen jQuery snippets before, you should be familiar with the <em>$(document.ready)</em>, which executes the wrapped code only after the document has finished loading.</p>
+
+<pre><code class="language-javascript">  $('.targetLinks').find('ul li a').on('click', function(eventMarker) {
+</code></pre>
+
+<p>This line of code does two things:</p>
+
+<ol>
+<li>Traverses the DOM to find the elements with class “targetLinks” that also contain the UL LI A descendant path and establishes a jQuery array of elements representing the matched <code>&lt;a&gt;</code> tags.</li>
+<li>Assigns a click event to each <code>&lt;a&gt;</code> in the returned array of elements.  The click event is an anonymous function that takes the DOM Event and assigns it to an argument called “eventMarker”.</li>
+</ol>
+
+<pre><code class="language-javascript">  var $dialog = $('&lt;div&gt;&lt;/div&gt;')
+</code></pre>
+
+<p>Next, we establish a variable, <em>$dialog</em>, as a pointer to a newly created DIV element. Why a new div? The jQuery UI dialog, like many other jQuery plugins, destroy the element used as the selector when the dialog closes.  We could target an existing DIV as the dialog, but when the modal closes, the existing DIV will be destroyed (lost for all script).</p>
+
+<pre><code class="language-javascript">  .load($(this).attr('href') + &quot; #target&quot;)
+</code></pre>
+
+<p>We continue the method chain, established on our newly created div, by calling the jQuery .load() method.  Load expects a URL (same site URI, of course), which we have passed by calling $(this) (the clicked anchor) and calling the .attr() method asking for the href.</p>
+
+<pre><code class="language-javascript">  .dialog({
+  	autoOpen: false,
+  	modal:true,
+  	title: $(this).attr('title'),
+  	width: 500,
+  	height: 300
+  });
+</code></pre>
+
+<p>Still continuing the method chain, we call the <a href="http://jqueryui.com/demos/dialog/">.dialog()</a> method on the <code>$dialog</code> variable (div that was created).  This established the UI Framework necessary to make the dialog work.  We set a few options to the dialog (see the <a href="http://jqueryui.com/dialog/#options">UI documentation for the dialog</a> for more options), again referencing <em>$(this)</em> (the clicked anchor) and calling the <a href="http://api.jquery.com/attr/">.attr()</a> method asking for the title of the anchor to set to the dialog title.</p>
+
+<pre><code class="language-javascript">  $dialog.dialog('open');
+</code></pre>
+
+<p>Here, we have separated the <em>open</em> command from the dialog instantiation.  This doesn’t need to be the case, here, but may prove to be a useful practice later.  If you were waiting to see your dialog, you should see it now.</p>
+
+<pre><code class="language-javascript">  eventMarker.preventDefault()
+</code></pre>
+
+<p>This is the moment we’ve been waiting for.  We have been following happily along wherever the DOM actions will take us but now, we are going to take control of the clicked anchor tag, and force it to do what we want.  Remember, <em>eventMarker</em> is the event argument passed in initially.  Here, we are calling the JavaScript preventDefault method on the event.  Since our event is the result of the click of an anchor, the default action should be to alter the window location.  Instead, we have truncated the event prior to changing the address bar.  As you might imagine, this same method can be used for bookmark links as well – in the end, the preventDefault() method will prevent the hash from being appended to the URL.</p>
+
+<h3 id="why-preventdefault-instead-of-return-false">Why <em>preventDefault()</em> instead of return false;?</h3>
+
+<p>Whenever  you run a return from a JavaScript function, you exit the function – completely preempting any further actions.  With <em>preventDefault()</em>, further processing can be accomplished after the method call, within the same function.  Note that <em>eventMarker.stopPropogation()</em> or <em>eventMarker.cancelBubble=true</em> should be used to completely cancel event bubbling.</p>
+
+<h3 id="so-what">So what?</h3>
+
+<p>Why would the methods in this post be useful?  With this code,  we are unobtrusively adding click event handlers to targeted links, but we are doing so without actually coding “onclick=’…’” or setting href=”javascript:function()”.  If your visitors have <a href="http://www.webdesignerdepot.com/2010/02/how-to-plan-for-the-absence-of-javascript/">JavaScript disabled</a>, then they will get the benefit of linked content.  If JavaScript is enabled, they will get the benefit of dynamic content display, without leaving the page.  <em>Win-win</em>.</p>
+
+<p><em>Photo by Tom Swinnen from Pexels</em></p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="http://www.jasoncorns.com/" style="background-image: url(/images/coffee-logo.png)"><span class="hidden">Jason Corns's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="http://www.jasoncorns.com/">Jason Corns</a></h4>
+  
+  <p><table border='0' cellpadding='0' cellspacing='0'><tbody><tr><td align='left' valign='bottom' width='107' style='line-height:0;vertical-align:bottom;padding-right:10px;padding-top:20px;padding-bottom:20px;'><a href='https://about.me/jasoncorns?promo=email_sig&amp;utm_source=product&amp;utm_medium=email_sig&amp;utm_campaign=edit_panel&amp;utm_content=thumb' style='text-decoration:none;'><img src='https://thumbs.about.me/thumbnail/users/j/a/s/jasoncorns_emailsig.jpg?_1523901236_916' alt='' width='105' height='70' style='margin:0;padding:0;display:block;border:1px solid #eeeeee;'></a></td><td align='left' valign='bottom' style='line-height:1.1;vertical-align:bottom;padding-top:20px;padding-bottom:20px;'><img src='https://about.me/t/sig?u=jasoncorns' width='1' height='1' style='border:0;margin:0;padding:0;width:1;height:1;overflow:hidden;'><div style='font-size:18px;font-weight:bold;color:#333333;font-family:'Proxima Nova',Helvetica,Arial,sans-serif !important;'>Jason Corns</div><a href='https://about.me/jasoncorns?promo=email_sig&amp;utm_source=product&amp;utm_medium=email_sig&amp;utm_campaign=edit_panel&amp;utm_content=thumb' style='text-decoration:none;font-size:12px;color:#2b82ad;font-family:'Proxima Nova',Helvetica,Arial,sans-serif !important;'>about.me/jasoncorns</a></td></tr></tbody></table></p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Seattle, WA</span>
+    <span class="author-link icon-link"><a href="http://about.me/jasoncorns">http://about.me/jasoncorns</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Jason%20vs.%20Anchor%20Tags%20%e2%80%93%20Getting%20Results%20with%20the%20preventDefault%20method&nbsp;-&nbsp;Jason%20Corns%27%20blog...&amp;url=http%3a%2f%2fwww.jasoncorns.com%2f2010%2f05%2fjason-vs.-anchor-tags--getting-results-with-the-preventdefault-method%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fwww.jasoncorns.com%2f2010%2f05%2fjason-vs.-anchor-tags--getting-results-with-the-preventdefault-method%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+      <a class="read-next-story" style="background-image: url(/images/posts/features/bar-cafe-chairs.jpg)" href="http://www.jasoncorns.com/2010/08/semantic-css-visual-outline/">
+          <section class="post">
+              <h2>Semantic Css Establishing a Visual Outline</h2>
+              
+          </section>
+      </a>
+  
+  
+      <a class="read-next-story prev" style="background-image: url(/images/posts/features/black-and-white-blur-book.jpg)" href="http://www.jasoncorns.com/2010/04/page-weight-accessibility-part-2/">
+          <section class="post">
+              <h2>Jason vs. Page Weight – Accessibility Series, pt. 2</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Jason Corns&#39; blog...</a> All rights reserved, 2011-2018</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://www.jasoncorns.com/js/jquery.js"></script>
+    <script type="text/javascript" src="http://www.jasoncorns.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://www.jasoncorns.com/js/index.js"></script>
+    
+</body>
+</html>
+

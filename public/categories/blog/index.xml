@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Jason Corns&#39; blog...</title>
+    <link>http://www.jasoncorns.com/categories/blog/</link>
+    <description>Recent content in Blog on Jason Corns&#39; blog...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>All rights reserved, 2011-2018</copyright>
+    <lastBuildDate>Thu, 13 May 2010 18:22:49 -0800</lastBuildDate>
+    
+	<atom:link href="http://www.jasoncorns.com/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jason vs. Anchor Tags – Getting Results with the preventDefault method</title>
+      <link>http://www.jasoncorns.com/2010/05/jason-vs.-anchor-tags--getting-results-with-the-preventdefault-method/</link>
+      <pubDate>Thu, 13 May 2010 18:22:49 -0800</pubDate>
+      
+      <guid>http://www.jasoncorns.com/2010/05/jason-vs.-anchor-tags--getting-results-with-the-preventdefault-method/</guid>
+      <description>In another post, Jason vs. Page Weight – Accessibility Series, pt. 2, I talked about a solving page weight problem I had with a client. In the end, the client decided to put a lot of data on a single page. In my opinion, this would have been a great time to use AJAX to pull in the data rather than just pushing it all to the page at load. The problem with AJAX is that it relies on JavaScript (reliance may, in fact, be too weak a term, honestly) and so would not have been ideal for search engines and would not have provided accessible page content.</description>
+    </item>
+    
+    <item>
+      <title>Jason vs. Page Weight – Accessibility Series, pt. 2</title>
+      <link>http://www.jasoncorns.com/2010/04/page-weight-accessibility-part-2/</link>
+      <pubDate>Mon, 26 Apr 2010 16:43:23 -0800</pubDate>
+      
+      <guid>http://www.jasoncorns.com/2010/04/page-weight-accessibility-part-2/</guid>
+      <description>&lt;p&gt;When the topic of Web Accessibility arises, I immediately think of a standard set of keywords: ADA/508 compliance, information architecture, JavaScript, well-formed HTML, ALT text, etc&amp;hellip;  This list represents the things that, as I have been taught over the past few years, have significant impact on the accessibility of a page and a site.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
