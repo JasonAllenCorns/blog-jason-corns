@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Responsive on Jason Corns&#39; blog...</title>
+    <link>http://www.jasoncorns.com/tags/responsive/</link>
+    <description>Recent content in Responsive on Jason Corns&#39; blog...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>All rights reserved, 2011-2018</copyright>
+    <lastBuildDate>Thu, 15 Sep 2011 12:16:18 -0800</lastBuildDate>
+    
+	<atom:link href="http://www.jasoncorns.com/tags/responsive/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jealousy Quick Look Responsive Redesign Boston Globe</title>
+      <link>http://www.jasoncorns.com/2011/09/jealousy-quick-look-responsive-redesign-boston-globe/</link>
+      <pubDate>Thu, 15 Sep 2011 12:16:18 -0800</pubDate>
+      
+      <guid>http://www.jasoncorns.com/2011/09/jealousy-quick-look-responsive-redesign-boston-globe/</guid>
+      <description>&lt;p&gt;A short while ago, the Boston Globe rolled out a redesigned website. To say that it was just redesigned is an understatement, though – the new entity is the result of Responsive Web Design.&lt;/p&gt;
+
+&lt;p&gt;So, why jealousy?  I have not yet had the opportunity to work on a responsive redesign yet; REALLY jealous of all parties involved!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

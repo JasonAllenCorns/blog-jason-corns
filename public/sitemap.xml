@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.jasoncorns.com/2011/09/jealousy-quick-look-responsive-redesign-boston-globe/</loc>
+    <lastmod>2011-09-15T12:16:18-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.jasoncorns.com/2010/08/semantic-css-visual-outline/</loc>
     <lastmod>2010-08-16T20:08:33-08:00</lastmod>
   </url>
@@ -23,14 +28,14 @@
   </url>
   
   <url>
-    <loc>http://www.jasoncorns.com/tags/accessibility/</loc>
-    <lastmod>2010-04-13T20:21:11-08:00</lastmod>
+    <loc>http://www.jasoncorns.com/categories/accessibility/</loc>
+    <lastmod>2010-04-26T16:43:23-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.jasoncorns.com/categories/accessibility/</loc>
-    <lastmod>2010-04-26T16:43:23-08:00</lastmod>
+    <loc>http://www.jasoncorns.com/tags/accessibility/</loc>
+    <lastmod>2010-04-13T20:21:11-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -42,7 +47,7 @@
   
   <url>
     <loc>http://www.jasoncorns.com/categories/blog/</loc>
-    <lastmod>2010-05-13T18:22:49-08:00</lastmod>
+    <lastmod>2011-09-15T12:16:18-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -54,7 +59,7 @@
   
   <url>
     <loc>http://www.jasoncorns.com/tags/code-sample/</loc>
-    <lastmod>2010-08-16T20:08:33-08:00</lastmod>
+    <lastmod>2011-09-15T12:16:18-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -66,13 +71,13 @@
   
   <url>
     <loc>http://www.jasoncorns.com/tags/css/</loc>
-    <lastmod>2010-08-16T20:08:33-08:00</lastmod>
+    <lastmod>2011-09-15T12:16:18-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.jasoncorns.com/</loc>
-    <lastmod>2010-08-16T20:08:33-08:00</lastmod>
+    <lastmod>2011-09-15T12:16:18-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -96,13 +101,25 @@
   
   <url>
     <loc>http://www.jasoncorns.com/post/</loc>
-    <lastmod>2010-08-16T20:08:33-08:00</lastmod>
+    <lastmod>2011-09-15T12:16:18-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.jasoncorns.com/tags/preventdefault/</loc>
     <lastmod>2010-05-13T18:22:49-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jasoncorns.com/tags/responsive/</loc>
+    <lastmod>2011-09-15T12:16:18-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jasoncorns.com/tags/site-design/</loc>
+    <lastmod>2011-09-15T12:16:18-08:00</lastmod>
     <priority>0</priority>
   </url>
   
