@@ -1,5 +1,5 @@
 +++
-title         = "Jealousy Quick Look Responsive Redesign Boston Globe"
+title         = "Jealousy: A Quick Look Responsive Redesign Boston Globe"
 slug          = "jealousy-quick-look-responsive-redesign-boston-globe"
 date          = 2011-09-15T12:16:18-08:00
 categories    = ["blog"]
