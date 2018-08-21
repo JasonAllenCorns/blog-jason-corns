@@ -3,7 +3,7 @@ languagecode                = "en-US"
 title                       = "Jason Corns' blog..."
 #disqusshortname = "YOUR_SHORT_NAME_HERE"
 copyright                   = "All rights reserved, 2011-2018"
-canonifyurls                = true
+canonifyurls                = false
 
 # site
 theme                       = "hugo-theme-casper"
