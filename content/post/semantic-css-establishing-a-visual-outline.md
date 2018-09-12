@@ -1,11 +1,10 @@
----
-title:        "Semantic Css Establishing a Visual Outline"
-slug:         "semantic-css-visual-outline"
-date:         2018-08-02T21:29:43-07:00
-publishdate:  2010-08-16T20:08:33-08:00
-tags:         ["css","coding","OOCSS","code-sample","tips"]
-image:        "images/posts/features/abstract-curves-led-1944.jpg"
----
++++
+title         = "Semantic Css Establishing a Visual Outline"
+slug          = "semantic-css-visual-outline"
+date          = 2010-08-16T20:08:33-08:00
+tags          = ["css","coding","OOCSS","code-sample","tips"]
+image         = "images/posts/features/bar-cafe-chairs.jpg"
++++
 
 Let's move beyond simply linting our code, and delve into creating a visual outline of our CSS.<!--more-->  Anyone who writes code, anything from simple UI shifts through complex exotic joins, inherits a responsibility to write reasonable code.  Good code solves a problem or answers a question; well-written code lives on, open and accessible to future developers.
 
@@ -63,3 +62,5 @@ There’s nothing new or magical here. In fact, this isn’t even a very pretty 
 Don’t forget – the final step before publishing to production should, at the very least, be minification!
 
 Bonus content: this concept can be rewritten to use Object Oriented CSS ([stubbornella@github](http://github.com/stubbornella/oocss/wiki) and [object-oriented CSS](http://oocss.org/)).  Check back later for that post!
+
+*Photo by Igor Starkov from Pexels*

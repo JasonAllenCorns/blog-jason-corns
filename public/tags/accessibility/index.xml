@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accessibility on Jason Corns&#39; blog...</title>
+    <link>http://www.jasoncorns.com/tags/accessibility/</link>
+    <description>Recent content in Accessibility on Jason Corns&#39; blog...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>All rights reserved, 2011-2018</copyright>
+    <lastBuildDate>Tue, 13 Apr 2010 20:21:11 -0800</lastBuildDate>
+    
+	<atom:link href="http://www.jasoncorns.com/tags/accessibility/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Accessibility Series, pt. 1</title>
+      <link>http://www.jasoncorns.com/2010/04/accessibility-part-1/</link>
+      <pubDate>Tue, 13 Apr 2010 20:21:11 -0800</pubDate>
+      
+      <guid>http://www.jasoncorns.com/2010/04/accessibility-part-1/</guid>
+      <description>Usability is finally starting to bubble to the top for Web Designers and Information Architects. We are, as an industry, starting to realize that our audience exists outside of Photoshop canvas and beyond the code. In fact, I have witnessed an increased focus on JavaScript degradation over the past few months – an unspoken admission that we, as web design professionals, should and shall provide web content to users of all browsing backgrounds and capabilities.</description>
+    </item>
+    
+  </channel>
+</rss>

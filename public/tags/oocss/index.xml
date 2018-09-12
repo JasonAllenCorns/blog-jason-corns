@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Oocss on Jason Corns&#39; blog...</title>
-    <link>http://jasoncorns.com/tags/oocss/</link>
+    <link>http://www.jasoncorns.com/tags/oocss/</link>
     <description>Recent content in Oocss on Jason Corns&#39; blog...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved, 2011-2018</copyright>
-    <lastBuildDate>Thu, 02 Aug 2018 21:29:43 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 16 Aug 2010 20:08:33 -0800</lastBuildDate>
     
-	<atom:link href="http://jasoncorns.com/tags/oocss/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.jasoncorns.com/tags/oocss/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Semantic Css Establishing a Visual Outline</title>
-      <link>http://jasoncorns.com/semantic-css-visual-outline/</link>
-      <pubDate>Thu, 02 Aug 2018 21:29:43 -0700</pubDate>
+      <link>http://www.jasoncorns.com/2010/08/semantic-css-visual-outline/</link>
+      <pubDate>Mon, 16 Aug 2010 20:08:33 -0800</pubDate>
       
-      <guid>http://jasoncorns.com/semantic-css-visual-outline/</guid>
+      <guid>http://www.jasoncorns.com/2010/08/semantic-css-visual-outline/</guid>
       <description>Let&amp;rsquo;s move beyond simply linting our code, and delve into creating a visual outline of our CSS. Anyone who writes code, anything from simple UI shifts through complex exotic joins, inherits a responsibility to write reasonable code. Good code solves a problem or answers a question; well-written code lives on, open and accessible to future developers.
 Before we begin, let me say that the delivered stylesheet should be minified and free of excess spaces, tabs, semicolons and lengths of 0px instead of “0″, using tools like the YUI compressor or the CSS Drive Online CSS Compression Utility.</description>
     </item>
