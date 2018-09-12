@@ -1,6 +1,6 @@
 baseurl= "http://jasoncorns.com/"
 languagecode= "en-US"
-title= "Jason Corns' blog..."
+title= "Jason Corns' blog for all mankind"
 #disqusshortname = "YOUR_SHORT_NAME_HERE"
 copyright = "All rights reserved, 2011-2018"
 canonifyurls = true
